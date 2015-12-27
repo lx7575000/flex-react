@@ -1,0 +1,1202 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.14.3
+3 info using node@v4.1.0
+4 verbose readDependencies loading dependencies from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/package.json
+5 warn package.json buyshoes@1.0.0 No repository field.
+6 verbose install where, deps [ '/Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react',
+6 verbose install   [ 'normalize.css',
+6 verbose install     'perfect-scrollbar',
+6 verbose install     'react',
+6 verbose install     'react-dom',
+6 verbose install     'autoprefixer',
+6 verbose install     'babel',
+6 verbose install     'babel-core',
+6 verbose install     'babel-loader',
+6 verbose install     'babelify',
+6 verbose install     'browser-sync',
+6 verbose install     'browserify',
+6 verbose install     'clean-css',
+6 verbose install     'postcss-cli',
+6 verbose install     'postcss-import',
+6 verbose install     'watchify',
+6 verbose install     'webpack' ] ]
+7 verbose install where, peers [ '/Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react',
+7 verbose install   [] ]
+8 verbose installManyTop reading for lifecycle /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/package.json
+9 info preinstall buyshoes@1.0.0
+10 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babel/package.json
+11 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babel-core/package.json
+12 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babel-loader/package.json
+13 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babelify/package.json
+14 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/browser-sync/package.json
+15 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/browserify/package.json
+16 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/clean-css/package.json
+17 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/normalize.css/package.json
+18 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/perfect-scrollbar/package.json
+19 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/postcss-cli/package.json
+20 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/postcss-import/package.json
+21 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/react/package.json
+22 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/react-dom/package.json
+23 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/watchify/package.json
+24 verbose installManyTop reading scoped package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/webpack/package.json
+25 verbose readDependencies loading dependencies from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/package.json
+26 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babel/package.json
+27 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babel-core/package.json
+28 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babel-loader/package.json
+29 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/babelify/package.json
+30 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/browser-sync/package.json
+31 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/browserify/package.json
+32 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/clean-css/package.json
+33 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/normalize.css/package.json
+34 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/perfect-scrollbar/package.json
+35 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/postcss-cli/package.json
+36 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/postcss-import/package.json
+37 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/react/package.json
+38 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/react-dom/package.json
+39 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/watchify/package.json
+40 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/webpack/package.json
+41 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/babel/package.json
+42 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/babel-external-helpers/package.json
+43 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/babel-node/package.json
+44 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/babel-plugin/package.json
+45 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/browser-sync/package.json
+46 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/browserify/package.json
+47 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/cleancss/package.json
+48 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/postcss/package.json
+49 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/watchify/package.json
+50 verbose targetResolver reading package data from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/.bin/webpack/package.json
+51 verbose already installed skipping babelify@^6.3.0 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+52 verbose already installed skipping browser-sync@^2.9.3 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+53 verbose already installed skipping browserify@^11.2.0 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+54 verbose already installed skipping clean-css@^3.4.3 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+55 verbose already installed skipping postcss-cli@^2.1.0 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+56 verbose already installed skipping postcss-import@^7.0.0 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+57 verbose already installed skipping watchify@^3.4.0 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+58 verbose already installed skipping webpack@^1.12.2 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+59 verbose already installed skipping normalize.css@^3.0.3 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+60 verbose already installed skipping perfect-scrollbar@^0.6.4 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+61 verbose already installed skipping react@^0.14.0 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+62 verbose already installed skipping react-dom@^0.14.0 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+63 silly cache add args [ 'autoprefixer@^6.0.2', null ]
+64 verbose cache add spec autoprefixer@^6.0.2
+65 silly cache add parsed spec Result {
+65 silly cache add   raw: 'autoprefixer@^6.0.2',
+65 silly cache add   scope: null,
+65 silly cache add   name: 'autoprefixer',
+65 silly cache add   rawSpec: '^6.0.2',
+65 silly cache add   spec: '>=6.0.2 <7.0.0',
+65 silly cache add   type: 'range' }
+66 silly addNamed autoprefixer@>=6.0.2 <7.0.0
+67 verbose addNamed ">=6.0.2 <7.0.0" is a valid semver range for autoprefixer
+68 silly addNameRange { name: 'autoprefixer', range: '>=6.0.2 <7.0.0', hasData: false }
+69 silly mapToRegistry name autoprefixer
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npm.taobao.org/
+72 silly mapToRegistry uri https://registry.npm.taobao.org/autoprefixer
+73 verbose addNameRange registry:https://registry.npm.taobao.org/autoprefixer not in flight; fetching
+74 verbose already installed skipping babel@^5.8.23 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+75 verbose already installed skipping babel-core@^5.8.25 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+76 verbose already installed skipping babel-loader@^5.3.2 /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+77 verbose request uri https://registry.npm.taobao.org/autoprefixer
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 09:21:10
+80 verbose request id b21bf5a9c9118192
+81 verbose etag "261dd-OFBnCtRpmmFKcFGecCeeQQ"
+82 http request GET https://registry.npm.taobao.org/autoprefixer
+83 http 304 https://registry.npm.taobao.org/autoprefixer
+84 silly get cb [ 304,
+84 silly get   { date: 'Sun, 27 Dec 2015 01:21:10 GMT',
+84 silly get     connection: 'keep-alive',
+84 silly get     etag: '"261dd-OFBnCtRpmmFKcFGecCeeQQ"',
+84 silly get     'x-readtime': '160' } ]
+85 verbose etag https://registry.npm.taobao.org/autoprefixer from cache
+86 verbose get saving autoprefixer to /Users/liuxin/.npm/registry.npm.taobao.org/autoprefixer/.cache.json
+87 silly addNameRange number 2 { name: 'autoprefixer', range: '>=6.0.2 <7.0.0', hasData: true }
+88 silly addNameRange versions [ 'autoprefixer',
+88 silly addNameRange   [ '6.2.2',
+88 silly addNameRange     '6.2.1',
+88 silly addNameRange     '6.2.0',
+88 silly addNameRange     '6.1.2',
+88 silly addNameRange     '6.1.1',
+88 silly addNameRange     '6.1.0',
+88 silly addNameRange     '6.0.3',
+88 silly addNameRange     '6.0.2',
+88 silly addNameRange     '6.0.1',
+88 silly addNameRange     '6.0.0',
+88 silly addNameRange     '5.2.0',
+88 silly addNameRange     '5.1.1',
+88 silly addNameRange     '5.1.0',
+88 silly addNameRange     '5.0.0',
+88 silly addNameRange     '4.0.0',
+88 silly addNameRange     '3.1.0',
+88 silly addNameRange     '3.0.0',
+88 silly addNameRange     '2.2.0',
+88 silly addNameRange     '2.1.1',
+88 silly addNameRange     '2.1.0',
+88 silly addNameRange     '2.0.2',
+88 silly addNameRange     '2.0.1',
+88 silly addNameRange     '2.0.0',
+88 silly addNameRange     '1.3.1',
+88 silly addNameRange     '1.3.0',
+88 silly addNameRange     '1.2.0',
+88 silly addNameRange     '1.1.20140605',
+88 silly addNameRange     '1.1.20140523',
+88 silly addNameRange     '1.1.20140521',
+88 silly addNameRange     '1.1.20140512',
+88 silly addNameRange     '1.1.20140510',
+88 silly addNameRange     '1.1.20140430',
+88 silly addNameRange     '1.1.20140429',
+88 silly addNameRange     '1.1.20140410',
+88 silly addNameRange     '1.1.20140403',
+88 silly addNameRange     '1.1.20140327',
+88 silly addNameRange     '1.1.20140319',
+88 silly addNameRange     '1.1.20140302',
+88 silly addNameRange     '1.1.20140226',
+88 silly addNameRange     '1.1.20140222',
+88 silly addNameRange     '1.1.20140218',
+88 silly addNameRange     '1.0.20140213',
+88 silly addNameRange     '1.0.20140203',
+88 silly addNameRange     '1.0.20140130',
+88 silly addNameRange     '1.0.20140117',
+88 silly addNameRange     '1.0.20140110',
+88 silly addNameRange     '1.0.20140109',
+88 silly addNameRange     '1.0.20140103',
+88 silly addNameRange     '1.0.20131222',
+88 silly addNameRange     '0.8.20131213',
+88 silly addNameRange     '0.8.20131209',
+88 silly addNameRange     '0.8.20131104',
+88 silly addNameRange     '0.8.20131029',
+88 silly addNameRange     '0.8.20131020',
+88 silly addNameRange     '0.8.20131017',
+88 silly addNameRange     '0.8.20131015',
+88 silly addNameRange     '0.8.20131009',
+88 silly addNameRange     '0.8.20131007',
+88 silly addNameRange     '0.8.20131006',
+88 silly addNameRange     '0.8.20131001',
+88 silly addNameRange     '0.8.20130923',
+88 silly addNameRange     '0.8.20130919',
+88 silly addNameRange     '0.8.20130911',
+88 silly addNameRange     '0.8.20130906',
+88 silly addNameRange     '0.8.20130903',
+88 silly addNameRange     '0.8.20130902',
+88 silly addNameRange     '0.7.20130824',
+88 silly addNameRange     '0.7.20130810',
+88 silly addNameRange     '0.7.20130808',
+88 silly addNameRange     '0.7.20130807',
+88 silly addNameRange     '0.7.20130806',
+88 silly addNameRange     '0.7.20130805',
+88 silly addNameRange     '0.6.20130731',
+88 silly addNameRange     '0.6.20130730',
+88 silly addNameRange     '0.6.20130729',
+88 silly addNameRange     '0.6.20130728',
+88 silly addNameRange     '0.6.20130721',
+88 silly addNameRange     '0.6.20130716',
+88 silly addNameRange     '0.5.20130629',
+88 silly addNameRange     '0.5.20130626',
+88 silly addNameRange     '0.5.20130625',
+88 silly addNameRange     '0.5.20130617',
+88 silly addNameRange     '0.5.20130616',
+88 silly addNameRange     '0.5.20130615',
+88 silly addNameRange     '0.4.20130603',
+88 silly addNameRange     '0.4.20130530',
+88 silly addNameRange     '0.4.20130528',
+88 silly addNameRange     '0.4.20130524',
+88 silly addNameRange     '0.4.20130521',
+88 silly addNameRange     '0.4.20130515',
+88 silly addNameRange     '0.4.20130507',
+88 silly addNameRange     '0.3.20130502',
+88 silly addNameRange     '0.3.20130427',
+88 silly addNameRange     '0.3.20130424',
+88 silly addNameRange     '0.3.20130423',
+88 silly addNameRange     '0.2.20130413',
+88 silly addNameRange     '0.1.20130409' ] ]
+89 silly addNamed autoprefixer@6.2.2
+90 verbose addNamed "6.2.2" is a plain semver version for autoprefixer
+91 silly cache afterAdd autoprefixer@6.2.2
+92 verbose afterAdd /Users/liuxin/.npm/autoprefixer/6.2.2/package/package.json not in flight; writing
+93 verbose afterAdd /Users/liuxin/.npm/autoprefixer/6.2.2/package/package.json written
+94 silly install resolved [ { name: 'autoprefixer',
+94 silly install resolved     version: '6.2.2',
+94 silly install resolved     description: 'Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website',
+94 silly install resolved     keywords: [ 'autoprefixer', 'css', 'prefix', 'postcss', 'postcss-plugin' ],
+94 silly install resolved     author: { name: 'Andrey Sitnik', email: 'andrey@sitnik.ru' },
+94 silly install resolved     license: 'MIT',
+94 silly install resolved     repository:
+94 silly install resolved      { type: 'git',
+94 silly install resolved        url: 'git+https://github.com/postcss/autoprefixer.git' },
+94 silly install resolved     dependencies:
+94 silly install resolved      { 'postcss-value-parser': '^3.2.3',
+94 silly install resolved        'normalize-range': '^0.1.2',
+94 silly install resolved        num2fraction: '^1.2.2',
+94 silly install resolved        browserslist: '~1.0.1',
+94 silly install resolved        'caniuse-db': '^1.0.30000382',
+94 silly install resolved        postcss: '^5.0.13' },
+94 silly install resolved     devDependencies:
+94 silly install resolved      { 'vinyl-source-stream': '1.1.0',
+94 silly install resolved        'gulp-json-editor': '2.2.1',
+94 silly install resolved        'gulp-replace': '0.5.4',
+94 silly install resolved        'gulp-eslint': '1.1.1',
+94 silly install resolved        'gulp-coffee': '2.3.1',
+94 silly install resolved        'gulp-mocha': '2.2.0',
+94 silly install resolved        browserify: '12.0.1',
+94 silly install resolved        'fs-extra': '0.26.3',
+94 silly install resolved        should: '8.0.2',
+94 silly install resolved        mocha: '2.3.4',
+94 silly install resolved        gulp: '3.9.0',
+94 silly install resolved        'coffee-script': '1.10.0' },
+94 silly install resolved     scripts: { test: 'gulp' },
+94 silly install resolved     main: 'lib/autoprefixer',
+94 silly install resolved     bugs: { url: 'https://github.com/postcss/autoprefixer/issues' },
+94 silly install resolved     homepage: 'https://github.com/postcss/autoprefixer#readme',
+94 silly install resolved     _id: 'autoprefixer@6.2.2',
+94 silly install resolved     _shasum: '2250ec2167f4c9374d8739e477d82ab2d70fe476',
+94 silly install resolved     _from: 'autoprefixer@>=6.0.2 <7.0.0',
+94 silly install resolved     _npmVersion: '3.3.12',
+94 silly install resolved     _nodeVersion: '5.3.0',
+94 silly install resolved     _npmUser: { name: 'ai', email: 'andrey@sitnik.ru' },
+94 silly install resolved     dist:
+94 silly install resolved      { shasum: '2250ec2167f4c9374d8739e477d82ab2d70fe476',
+94 silly install resolved        size: 37401,
+94 silly install resolved        noattachment: false,
+94 silly install resolved        tarball: 'http://registry.npm.taobao.org/autoprefixer/download/autoprefixer-6.2.2.tgz' },
+94 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+94 silly install resolved     directories: {},
+94 silly install resolved     publish_time: 1451168219770,
+94 silly install resolved     _cnpm_publish_time: 1451168219770,
+94 silly install resolved     _resolved: 'https://registry.npm.taobao.org/autoprefixer/download/autoprefixer-6.2.2.tgz',
+94 silly install resolved     readme: 'ERROR: No README data found!' } ]
+95 info install autoprefixer@6.2.2 into /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+96 info installOne autoprefixer@6.2.2
+97 verbose installOne of autoprefixer to /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react not in flight; installing
+98 verbose lock using /Users/liuxin/.npm/_locks/autoprefixer-3993e863186a6d23.lock for /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+99 silly install write writing autoprefixer 6.2.2 to /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+100 verbose unbuild node_modules/autoprefixer
+101 silly gentlyRm /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer is being purged from base /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+102 verbose gentlyRm don't care about contents; nuking /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+103 verbose tar unpack /Users/liuxin/.npm/autoprefixer/6.2.2/package.tgz
+104 verbose tar unpacking to /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+105 silly gentlyRm /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer is being purged
+106 verbose gentlyRm don't care about contents; nuking /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+107 silly gunzTarPerm modes [ '755', '644' ]
+108 silly gunzTarPerm extractEntry package.json
+109 silly gunzTarPerm extractEntry README.md
+110 silly gunzTarPerm extractEntry LICENSE
+111 silly gunzTarPerm extractEntry CHANGELOG.md
+112 silly gunzTarPerm extractEntry data/prefixes.js
+113 silly gunzTarPerm extractEntry lib/at-rule.js
+114 silly gunzTarPerm extractEntry lib/utils.js
+115 silly gunzTarPerm extractEntry lib/info.js
+116 silly gunzTarPerm extractEntry lib/old-selector.js
+117 silly gunzTarPerm extractEntry lib/declaration.js
+118 silly gunzTarPerm extractEntry lib/autoprefixer.js
+119 silly gunzTarPerm extractEntry lib/prefixes.js
+120 silly gunzTarPerm extractEntry lib/processor.js
+121 silly gunzTarPerm extractEntry lib/resolution.js
+122 silly gunzTarPerm extractEntry lib/selector.js
+123 silly gunzTarPerm extractEntry lib/browsers.js
+124 silly gunzTarPerm extractEntry lib/supports.js
+125 silly gunzTarPerm extractEntry lib/brackets.js
+126 silly gunzTarPerm extractEntry lib/transition.js
+127 silly gunzTarPerm extractEntry lib/old-value.js
+128 silly gunzTarPerm extractEntry lib/value.js
+129 silly gunzTarPerm extractEntry lib/prefixer.js
+130 silly gunzTarPerm extractEntry lib/hacks/align-content.js
+131 silly gunzTarPerm extractEntry lib/hacks/flex-direction.js
+132 silly gunzTarPerm extractEntry lib/hacks/flex-flow.js
+133 silly gunzTarPerm extractEntry lib/hacks/flex-grow.js
+134 silly gunzTarPerm extractEntry lib/hacks/flex-basis.js
+135 silly gunzTarPerm extractEntry lib/hacks/flex-spec.js
+136 silly gunzTarPerm extractEntry lib/hacks/flex-values.js
+137 silly gunzTarPerm extractEntry lib/hacks/flex-wrap.js
+138 silly gunzTarPerm extractEntry lib/hacks/flex.js
+139 silly gunzTarPerm extractEntry lib/hacks/fullscreen.js
+140 silly gunzTarPerm extractEntry lib/hacks/filter.js
+141 silly gunzTarPerm extractEntry lib/hacks/gradient.js
+142 silly gunzTarPerm extractEntry lib/hacks/filter-value.js
+143 silly gunzTarPerm extractEntry lib/hacks/image-rendering.js
+144 silly gunzTarPerm extractEntry lib/hacks/fill.js
+145 silly gunzTarPerm extractEntry lib/hacks/image-set.js
+146 silly gunzTarPerm extractEntry lib/hacks/display-flex.js
+147 silly gunzTarPerm extractEntry lib/hacks/inline-logical.js
+148 silly gunzTarPerm extractEntry lib/hacks/cross-fade.js
+149 silly gunzTarPerm extractEntry lib/hacks/justify-content.js
+150 silly gunzTarPerm extractEntry lib/hacks/break-props.js
+151 silly gunzTarPerm extractEntry lib/hacks/mask-border.js
+152 silly gunzTarPerm extractEntry lib/hacks/border-radius.js
+153 silly gunzTarPerm extractEntry lib/hacks/order.js
+154 silly gunzTarPerm extractEntry lib/hacks/border-image.js
+155 silly gunzTarPerm extractEntry lib/hacks/pixelated.js
+156 silly gunzTarPerm extractEntry lib/hacks/block-logical.js
+157 silly gunzTarPerm extractEntry lib/hacks/placeholder.js
+158 silly gunzTarPerm extractEntry lib/hacks/background-size.js
+159 silly gunzTarPerm extractEntry lib/hacks/text-emphasis-position.js
+160 silly gunzTarPerm extractEntry lib/hacks/align-self.js
+161 silly gunzTarPerm extractEntry lib/hacks/transform-decl.js
+162 silly gunzTarPerm extractEntry lib/hacks/align-items.js
+163 silly gunzTarPerm extractEntry lib/hacks/writing-mode.js
+164 silly gunzTarPerm extractEntry lib/hacks/flex-shrink.js
+165 verbose write writing to /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer/package.json
+166 info preinstall autoprefixer@6.2.2
+167 verbose readDependencies loading dependencies from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer/package.json
+168 silly prepareForInstallMany adding postcss-value-parser@^3.2.3 from autoprefixer dependencies
+169 silly prepareForInstallMany adding normalize-range@^0.1.2 from autoprefixer dependencies
+170 silly prepareForInstallMany adding num2fraction@^1.2.2 from autoprefixer dependencies
+171 silly prepareForInstallMany adding browserslist@~1.0.1 from autoprefixer dependencies
+172 silly prepareForInstallMany adding caniuse-db@^1.0.30000382 from autoprefixer dependencies
+173 silly prepareForInstallMany adding postcss@^5.0.13 from autoprefixer dependencies
+174 verbose readDependencies loading dependencies from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer/package.json
+175 silly cache add args [ 'postcss-value-parser@^3.2.3', null ]
+176 verbose cache add spec postcss-value-parser@^3.2.3
+177 silly cache add args [ 'normalize-range@^0.1.2', null ]
+178 verbose cache add spec normalize-range@^0.1.2
+179 silly cache add parsed spec Result {
+179 silly cache add   raw: 'postcss-value-parser@^3.2.3',
+179 silly cache add   scope: null,
+179 silly cache add   name: 'postcss-value-parser',
+179 silly cache add   rawSpec: '^3.2.3',
+179 silly cache add   spec: '>=3.2.3 <4.0.0',
+179 silly cache add   type: 'range' }
+180 silly addNamed postcss-value-parser@>=3.2.3 <4.0.0
+181 verbose addNamed ">=3.2.3 <4.0.0" is a valid semver range for postcss-value-parser
+182 silly addNameRange { name: 'postcss-value-parser',
+182 silly addNameRange   range: '>=3.2.3 <4.0.0',
+182 silly addNameRange   hasData: false }
+183 silly mapToRegistry name postcss-value-parser
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry https://registry.npm.taobao.org/
+186 silly mapToRegistry uri https://registry.npm.taobao.org/postcss-value-parser
+187 verbose addNameRange registry:https://registry.npm.taobao.org/postcss-value-parser not in flight; fetching
+188 silly cache add parsed spec Result {
+188 silly cache add   raw: 'normalize-range@^0.1.2',
+188 silly cache add   scope: null,
+188 silly cache add   name: 'normalize-range',
+188 silly cache add   rawSpec: '^0.1.2',
+188 silly cache add   spec: '>=0.1.2 <0.2.0',
+188 silly cache add   type: 'range' }
+189 silly addNamed normalize-range@>=0.1.2 <0.2.0
+190 verbose addNamed ">=0.1.2 <0.2.0" is a valid semver range for normalize-range
+191 silly addNameRange { name: 'normalize-range',
+191 silly addNameRange   range: '>=0.1.2 <0.2.0',
+191 silly addNameRange   hasData: false }
+192 silly mapToRegistry name normalize-range
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npm.taobao.org/
+195 silly mapToRegistry uri https://registry.npm.taobao.org/normalize-range
+196 verbose addNameRange registry:https://registry.npm.taobao.org/normalize-range not in flight; fetching
+197 silly cache add args [ 'num2fraction@^1.2.2', null ]
+198 verbose cache add spec num2fraction@^1.2.2
+199 silly cache add parsed spec Result {
+199 silly cache add   raw: 'num2fraction@^1.2.2',
+199 silly cache add   scope: null,
+199 silly cache add   name: 'num2fraction',
+199 silly cache add   rawSpec: '^1.2.2',
+199 silly cache add   spec: '>=1.2.2 <2.0.0',
+199 silly cache add   type: 'range' }
+200 silly addNamed num2fraction@>=1.2.2 <2.0.0
+201 verbose addNamed ">=1.2.2 <2.0.0" is a valid semver range for num2fraction
+202 silly addNameRange { name: 'num2fraction', range: '>=1.2.2 <2.0.0', hasData: false }
+203 silly mapToRegistry name num2fraction
+204 silly mapToRegistry using default registry
+205 silly mapToRegistry registry https://registry.npm.taobao.org/
+206 silly mapToRegistry uri https://registry.npm.taobao.org/num2fraction
+207 verbose addNameRange registry:https://registry.npm.taobao.org/num2fraction not in flight; fetching
+208 silly cache add args [ 'browserslist@~1.0.1', null ]
+209 verbose cache add spec browserslist@~1.0.1
+210 silly cache add parsed spec Result {
+210 silly cache add   raw: 'browserslist@~1.0.1',
+210 silly cache add   scope: null,
+210 silly cache add   name: 'browserslist',
+210 silly cache add   rawSpec: '~1.0.1',
+210 silly cache add   spec: '>=1.0.1 <1.1.0',
+210 silly cache add   type: 'range' }
+211 silly addNamed browserslist@>=1.0.1 <1.1.0
+212 verbose addNamed ">=1.0.1 <1.1.0" is a valid semver range for browserslist
+213 silly addNameRange { name: 'browserslist', range: '>=1.0.1 <1.1.0', hasData: false }
+214 silly mapToRegistry name browserslist
+215 silly mapToRegistry using default registry
+216 silly mapToRegistry registry https://registry.npm.taobao.org/
+217 silly mapToRegistry uri https://registry.npm.taobao.org/browserslist
+218 verbose addNameRange registry:https://registry.npm.taobao.org/browserslist not in flight; fetching
+219 silly cache add args [ 'caniuse-db@^1.0.30000382', null ]
+220 verbose cache add spec caniuse-db@^1.0.30000382
+221 silly cache add parsed spec Result {
+221 silly cache add   raw: 'caniuse-db@^1.0.30000382',
+221 silly cache add   scope: null,
+221 silly cache add   name: 'caniuse-db',
+221 silly cache add   rawSpec: '^1.0.30000382',
+221 silly cache add   spec: '>=1.0.30000382 <2.0.0',
+221 silly cache add   type: 'range' }
+222 silly addNamed caniuse-db@>=1.0.30000382 <2.0.0
+223 verbose addNamed ">=1.0.30000382 <2.0.0" is a valid semver range for caniuse-db
+224 silly addNameRange { name: 'caniuse-db',
+224 silly addNameRange   range: '>=1.0.30000382 <2.0.0',
+224 silly addNameRange   hasData: false }
+225 silly mapToRegistry name caniuse-db
+226 silly mapToRegistry using default registry
+227 silly mapToRegistry registry https://registry.npm.taobao.org/
+228 silly mapToRegistry uri https://registry.npm.taobao.org/caniuse-db
+229 verbose addNameRange registry:https://registry.npm.taobao.org/caniuse-db not in flight; fetching
+230 silly cache add args [ 'postcss@^5.0.13', null ]
+231 verbose cache add spec postcss@^5.0.13
+232 silly cache add parsed spec Result {
+232 silly cache add   raw: 'postcss@^5.0.13',
+232 silly cache add   scope: null,
+232 silly cache add   name: 'postcss',
+232 silly cache add   rawSpec: '^5.0.13',
+232 silly cache add   spec: '>=5.0.13 <6.0.0',
+232 silly cache add   type: 'range' }
+233 silly addNamed postcss@>=5.0.13 <6.0.0
+234 verbose addNamed ">=5.0.13 <6.0.0" is a valid semver range for postcss
+235 silly addNameRange { name: 'postcss', range: '>=5.0.13 <6.0.0', hasData: false }
+236 silly mapToRegistry name postcss
+237 silly mapToRegistry using default registry
+238 silly mapToRegistry registry https://registry.npm.taobao.org/
+239 silly mapToRegistry uri https://registry.npm.taobao.org/postcss
+240 verbose addNameRange registry:https://registry.npm.taobao.org/postcss not in flight; fetching
+241 verbose request uri https://registry.npm.taobao.org/normalize-range
+242 verbose request no auth needed
+243 info attempt registry request try #1 at 09:21:10
+244 verbose etag "2792-sZwrK6Smjke2qI6RYEaEeA"
+245 http request GET https://registry.npm.taobao.org/normalize-range
+246 verbose request uri https://registry.npm.taobao.org/postcss-value-parser
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 09:21:10
+249 verbose etag "b221-ftPZ6tZhFOMyIHeGV0sXPA"
+250 http request GET https://registry.npm.taobao.org/postcss-value-parser
+251 verbose request uri https://registry.npm.taobao.org/browserslist
+252 verbose request no auth needed
+253 info attempt registry request try #1 at 09:21:10
+254 verbose etag "53e8-iNj05EYx+mxLq4ypJYZ2tw"
+255 http request GET https://registry.npm.taobao.org/browserslist
+256 verbose request uri https://registry.npm.taobao.org/num2fraction
+257 verbose request no auth needed
+258 info attempt registry request try #1 at 09:21:10
+259 verbose etag "2947-GDDnxUsmfoUtjpnGf7KZSw"
+260 http request GET https://registry.npm.taobao.org/num2fraction
+261 verbose request uri https://registry.npm.taobao.org/postcss
+262 verbose request no auth needed
+263 info attempt registry request try #1 at 09:21:10
+264 verbose etag "1c4fa-S5UI3lfnul37GN0VyznveA"
+265 http request GET https://registry.npm.taobao.org/postcss
+266 verbose request uri https://registry.npm.taobao.org/caniuse-db
+267 verbose request no auth needed
+268 info attempt registry request try #1 at 09:21:10
+269 verbose etag "7964a-5u5YBU4cvBZjdfdfkRZIqg"
+270 http request GET https://registry.npm.taobao.org/caniuse-db
+271 http 304 https://registry.npm.taobao.org/browserslist
+272 silly get cb [ 304,
+272 silly get   { date: 'Sun, 27 Dec 2015 01:21:10 GMT',
+272 silly get     connection: 'keep-alive',
+272 silly get     etag: '"53e8-iNj05EYx+mxLq4ypJYZ2tw"',
+272 silly get     'x-readtime': '23' } ]
+273 verbose etag https://registry.npm.taobao.org/browserslist from cache
+274 verbose get saving browserslist to /Users/liuxin/.npm/registry.npm.taobao.org/browserslist/.cache.json
+275 http 304 https://registry.npm.taobao.org/normalize-range
+276 silly get cb [ 304,
+276 silly get   { date: 'Sun, 27 Dec 2015 01:21:10 GMT',
+276 silly get     connection: 'keep-alive',
+276 silly get     etag: '"2792-sZwrK6Smjke2qI6RYEaEeA"',
+276 silly get     'x-readtime': '30' } ]
+277 verbose etag https://registry.npm.taobao.org/normalize-range from cache
+278 verbose get saving normalize-range to /Users/liuxin/.npm/registry.npm.taobao.org/normalize-range/.cache.json
+279 silly addNameRange number 2 { name: 'browserslist', range: '>=1.0.1 <1.1.0', hasData: true }
+280 silly addNameRange versions [ 'browserslist',
+280 silly addNameRange   [ '1.0.1',
+280 silly addNameRange     '1.0.0',
+280 silly addNameRange     '0.5.0',
+280 silly addNameRange     '0.4.0',
+280 silly addNameRange     '0.3.3',
+280 silly addNameRange     '0.3.2',
+280 silly addNameRange     '0.3.1',
+280 silly addNameRange     '0.3.0',
+280 silly addNameRange     '0.2.0',
+280 silly addNameRange     '0.1.3',
+280 silly addNameRange     '0.1.2',
+280 silly addNameRange     '0.1.1',
+280 silly addNameRange     '0.1.0' ] ]
+281 silly addNamed browserslist@1.0.1
+282 verbose addNamed "1.0.1" is a plain semver version for browserslist
+283 silly addNameRange number 2 { name: 'normalize-range',
+283 silly addNameRange   range: '>=0.1.2 <0.2.0',
+283 silly addNameRange   hasData: true }
+284 silly addNameRange versions [ 'normalize-range', [ '0.1.2', '0.1.1', '0.1.0' ] ]
+285 silly addNamed normalize-range@0.1.2
+286 verbose addNamed "0.1.2" is a plain semver version for normalize-range
+287 silly cache afterAdd normalize-range@0.1.2
+288 verbose afterAdd /Users/liuxin/.npm/normalize-range/0.1.2/package/package.json not in flight; writing
+289 silly cache afterAdd browserslist@1.0.1
+290 verbose afterAdd /Users/liuxin/.npm/browserslist/1.0.1/package/package.json not in flight; writing
+291 verbose afterAdd /Users/liuxin/.npm/normalize-range/0.1.2/package/package.json written
+292 verbose afterAdd /Users/liuxin/.npm/browserslist/1.0.1/package/package.json written
+293 http 304 https://registry.npm.taobao.org/num2fraction
+294 silly get cb [ 304,
+294 silly get   { date: 'Sun, 27 Dec 2015 01:21:10 GMT',
+294 silly get     connection: 'keep-alive',
+294 silly get     etag: '"2947-GDDnxUsmfoUtjpnGf7KZSw"',
+294 silly get     'x-readtime': '28' } ]
+295 verbose etag https://registry.npm.taobao.org/num2fraction from cache
+296 verbose get saving num2fraction to /Users/liuxin/.npm/registry.npm.taobao.org/num2fraction/.cache.json
+297 silly addNameRange number 2 { name: 'num2fraction', range: '>=1.2.2 <2.0.0', hasData: true }
+298 silly addNameRange versions [ 'num2fraction',
+298 silly addNameRange   [ '1.2.2', '1.2.1', '1.2.0', '1.1.0', '1.0.1', '1.0.0' ] ]
+299 silly addNamed num2fraction@1.2.2
+300 verbose addNamed "1.2.2" is a plain semver version for num2fraction
+301 silly cache afterAdd num2fraction@1.2.2
+302 verbose afterAdd /Users/liuxin/.npm/num2fraction/1.2.2/package/package.json not in flight; writing
+303 verbose afterAdd /Users/liuxin/.npm/num2fraction/1.2.2/package/package.json written
+304 http 304 https://registry.npm.taobao.org/caniuse-db
+305 silly get cb [ 304,
+305 silly get   { date: 'Sun, 27 Dec 2015 01:21:10 GMT',
+305 silly get     connection: 'keep-alive',
+305 silly get     etag: '"7964a-5u5YBU4cvBZjdfdfkRZIqg"',
+305 silly get     'x-readtime': '116' } ]
+306 verbose etag https://registry.npm.taobao.org/caniuse-db from cache
+307 verbose get saving caniuse-db to /Users/liuxin/.npm/registry.npm.taobao.org/caniuse-db/.cache.json
+308 silly addNameRange number 2 { name: 'caniuse-db',
+308 silly addNameRange   range: '>=1.0.30000382 <2.0.0',
+308 silly addNameRange   hasData: true }
+309 silly addNameRange versions [ 'caniuse-db',
+309 silly addNameRange   [ '1.0.30000381',
+309 silly addNameRange     '1.0.30000380',
+309 silly addNameRange     '1.0.30000379',
+309 silly addNameRange     '1.0.30000378',
+309 silly addNameRange     '1.0.30000377',
+309 silly addNameRange     '1.0.30000376',
+309 silly addNameRange     '1.0.30000375',
+309 silly addNameRange     '1.0.30000374',
+309 silly addNameRange     '1.0.30000373',
+309 silly addNameRange     '1.0.30000372',
+309 silly addNameRange     '1.0.30000371',
+309 silly addNameRange     '1.0.30000370',
+309 silly addNameRange     '1.0.30000369',
+309 silly addNameRange     '1.0.30000368',
+309 silly addNameRange     '1.0.30000367',
+309 silly addNameRange     '1.0.30000366',
+309 silly addNameRange     '1.0.30000365',
+309 silly addNameRange     '1.0.30000364',
+309 silly addNameRange     '1.0.30000363',
+309 silly addNameRange     '1.0.30000362',
+309 silly addNameRange     '1.0.30000361',
+309 silly addNameRange     '1.0.30000360',
+309 silly addNameRange     '1.0.30000359',
+309 silly addNameRange     '1.0.30000358',
+309 silly addNameRange     '1.0.30000357',
+309 silly addNameRange     '1.0.30000356',
+309 silly addNameRange     '1.0.30000355',
+309 silly addNameRange     '1.0.30000354',
+309 silly addNameRange     '1.0.30000353',
+309 silly addNameRange     '1.0.30000352',
+309 silly addNameRange     '1.0.30000351',
+309 silly addNameRange     '1.0.30000350',
+309 silly addNameRange     '1.0.30000349',
+309 silly addNameRange     '1.0.30000348',
+309 silly addNameRange     '1.0.30000347',
+309 silly addNameRange     '1.0.30000346',
+309 silly addNameRange     '1.0.30000345',
+309 silly addNameRange     '1.0.30000344',
+309 silly addNameRange     '1.0.30000343',
+309 silly addNameRange     '1.0.30000342',
+309 silly addNameRange     '1.0.30000341',
+309 silly addNameRange     '1.0.30000340',
+309 silly addNameRange     '1.0.30000339',
+309 silly addNameRange     '1.0.30000338',
+309 silly addNameRange     '1.0.30000337',
+309 silly addNameRange     '1.0.30000336',
+309 silly addNameRange     '1.0.30000335',
+309 silly addNameRange     '1.0.30000334',
+309 silly addNameRange     '1.0.30000333',
+309 silly addNameRange     '1.0.30000332',
+309 silly addNameRange     '1.0.30000331',
+309 silly addNameRange     '1.0.30000330',
+309 silly addNameRange     '1.0.30000329',
+309 silly addNameRange     '1.0.30000328',
+309 silly addNameRange     '1.0.30000327',
+309 silly addNameRange     '1.0.30000326',
+309 silly addNameRange     '1.0.30000325',
+309 silly addNameRange     '1.0.30000324',
+309 silly addNameRange     '1.0.30000323',
+309 silly addNameRange     '1.0.30000322',
+309 silly addNameRange     '1.0.30000321',
+309 silly addNameRange     '1.0.30000320',
+309 silly addNameRange     '1.0.30000319',
+309 silly addNameRange     '1.0.30000318',
+309 silly addNameRange     '1.0.30000317',
+309 silly addNameRange     '1.0.30000316',
+309 silly addNameRange     '1.0.30000315',
+309 silly addNameRange     '1.0.30000314',
+309 silly addNameRange     '1.0.30000313',
+309 silly addNameRange     '1.0.30000312',
+309 silly addNameRange     '1.0.30000311',
+309 silly addNameRange     '1.0.30000310',
+309 silly addNameRange     '1.0.30000309',
+309 silly addNameRange     '1.0.30000308',
+309 silly addNameRange     '1.0.30000307',
+309 silly addNameRange     '1.0.30000306',
+309 silly addNameRange     '1.0.30000305',
+309 silly addNameRange     '1.0.30000304',
+309 silly addNameRange     '1.0.30000303',
+309 silly addNameRange     '1.0.30000302',
+309 silly addNameRange     '1.0.30000301',
+309 silly addNameRange     '1.0.30000300',
+309 silly addNameRange     '1.0.30000299',
+309 silly addNameRange     '1.0.30000298',
+309 silly addNameRange     '1.0.30000297',
+309 silly addNameRange     '1.0.30000296',
+309 silly addNameRange     '1.0.30000295',
+309 silly addNameRange     '1.0.30000294',
+309 silly addNameRange     '1.0.30000293',
+309 silly addNameRange     '1.0.30000292',
+309 silly addNameRange     '1.0.30000291',
+309 silly addNameRange     '1.0.30000290',
+309 silly addNameRange     '1.0.30000289',
+309 silly addNameRange     '1.0.30000288',
+309 silly addNameRange     '1.0.30000287',
+309 silly addNameRange     '1.0.30000286',
+309 silly addNameRange     '1.0.30000285',
+309 silly addNameRange     '1.0.30000284',
+309 silly addNameRange     '1.0.30000283',
+309 silly addNameRange     '1.0.30000282',
+309 silly addNameRange     '1.0.30000281',
+309 silly addNameRange     '1.0.30000280',
+309 silly addNameRange     '1.0.30000279',
+309 silly addNameRange     '1.0.30000278',
+309 silly addNameRange     '1.0.30000277',
+309 silly addNameRange     '1.0.30000276',
+309 silly addNameRange     '1.0.30000275',
+309 silly addNameRange     '1.0.30000274',
+309 silly addNameRange     '1.0.30000273',
+309 silly addNameRange     '1.0.30000272',
+309 silly addNameRange     '1.0.30000271',
+309 silly addNameRange     '1.0.30000270',
+309 silly addNameRange     '1.0.30000269',
+309 silly addNameRange     '1.0.30000268',
+309 silly addNameRange     '1.0.30000267',
+309 silly addNameRange     '1.0.30000266',
+309 silly addNameRange     '1.0.30000265',
+309 silly addNameRange     '1.0.30000264',
+309 silly addNameRange     '1.0.30000263',
+309 silly addNameRange     '1.0.30000261',
+309 silly addNameRange     '1.0.30000262',
+309 silly addNameRange     '1.0.30000260',
+309 silly addNameRange     '1.0.30000259',
+309 silly addNameRange     '1.0.30000258',
+309 silly addNameRange     '1.0.30000257',
+309 silly addNameRange     '1.0.30000256',
+309 silly addNameRange     '1.0.30000255',
+309 silly addNameRange     '1.0.30000254',
+309 silly addNameRange     '1.0.30000253',
+309 silly addNameRange     '1.0.30000252',
+309 silly addNameRange     '1.0.30000251',
+309 silly addNameRange     '1.0.30000250',
+309 silly addNameRange     '1.0.30000249',
+309 silly addNameRange     '1.0.30000248',
+309 silly addNameRange     '1.0.30000247',
+309 silly addNameRange     '1.0.30000246',
+309 silly addNameRange     '1.0.30000245',
+309 silly addNameRange     '1.0.30000244',
+309 silly addNameRange     '1.0.30000243',
+309 silly addNameRange     '1.0.30000242',
+309 silly addNameRange     '1.0.30000241',
+309 silly addNameRange     '1.0.30000240',
+309 silly addNameRange     '1.0.30000239',
+309 silly addNameRange     '1.0.30000238',
+309 silly addNameRange     '1.0.30000237',
+309 silly addNameRange     '1.0.30000236',
+309 silly addNameRange     '1.0.30000235',
+309 silly addNameRange     '1.0.30000234',
+309 silly addNameRange     '1.0.30000233',
+309 silly addNameRange     '1.0.30000232',
+309 silly addNameRange     '1.0.30000231',
+309 silly addNameRange     '1.0.30000230',
+309 silly addNameRange     '1.0.30000229',
+309 silly addNameRange     '1.0.30000228',
+309 silly addNameRange     '1.0.30000227',
+309 silly addNameRange     '1.0.30000226',
+309 silly addNameRange     '1.0.30000225',
+309 silly addNameRange     '1.0.30000224',
+309 silly addNameRange     '1.0.30000223',
+309 silly addNameRange     '1.0.30000222',
+309 silly addNameRange     '1.0.30000221',
+309 silly addNameRange     '1.0.30000219',
+309 silly addNameRange     '1.0.30000218',
+309 silly addNameRange     '1.0.30000217',
+309 silly addNameRange     '1.0.30000216',
+309 silly addNameRange     '1.0.30000215',
+309 silly addNameRange     '1.0.30000214',
+309 silly addNameRange     '1.0.30000213',
+309 silly addNameRange     '1.0.30000212',
+309 silly addNameRange     '1.0.30000211',
+309 silly addNameRange     '1.0.30000210',
+309 silly addNameRange     '1.0.30000209',
+309 silly addNameRange     '1.0.30000208',
+309 silly addNameRange     '1.0.30000207',
+309 silly addNameRange     '1.0.30000206',
+309 silly addNameRange     '1.0.30000205',
+309 silly addNameRange     '1.0.30000204',
+309 silly addNameRange     '1.0.30000202',
+309 silly addNameRange     '1.0.30000203',
+309 silly addNameRange     '1.0.30000201',
+309 silly addNameRange     '1.0.30000200',
+309 silly addNameRange     '1.0.30000199',
+309 silly addNameRange     '1.0.30000198',
+309 silly addNameRange     '1.0.30000197',
+309 silly addNameRange     '1.0.30000196',
+309 silly addNameRange     '1.0.30000195',
+309 silly addNameRange     '1.0.30000194',
+309 silly addNameRange     '1.0.30000193',
+309 silly addNameRange     '1.0.30000192',
+309 silly addNameRange     '1.0.30000191',
+309 silly addNameRange     '1.0.30000190',
+309 silly addNameRange     '1.0.30000189',
+309 silly addNameRange     '1.0.30000188',
+309 silly addNameRange     '1.0.30000187',
+309 silly addNameRange     '1.0.30000186',
+309 silly addNameRange     '1.0.30000185',
+309 silly addNameRange     '1.0.30000184',
+309 silly addNameRange     '1.0.30000183',
+309 silly addNameRange     '1.0.30000182',
+309 silly addNameRange     '1.0.30000181',
+309 silly addNameRange     '1.0.30000180',
+309 silly addNameRange     '1.0.30000179',
+309 silly addNameRange     '1.0.30000178',
+309 silly addNameRange     '1.0.30000177',
+309 silly addNameRange     '1.0.30000176',
+309 silly addNameRange     '1.0.30000175',
+309 silly addNameRange     '1.0.30000174',
+309 silly addNameRange     '1.0.30000173',
+309 silly addNameRange     '1.0.30000172',
+309 silly addNameRange     '1.0.30000171',
+309 silly addNameRange     '1.0.30000170',
+309 silly addNameRange     '1.0.30000169',
+309 silly addNameRange     '1.0.30000168',
+309 silly addNameRange     '1.0.30000167',
+309 silly addNameRange     '1.0.30000166',
+309 silly addNameRange     '1.0.30000165',
+309 silly addNameRange     '1.0.30000164',
+309 silly addNameRange     '1.0.30000163',
+309 silly addNameRange     '1.0.30000162',
+309 silly addNameRange     '1.0.30000161',
+309 silly addNameRange     '1.0.30000160',
+309 silly addNameRange     '1.0.30000159',
+309 silly addNameRange     '1.0.30000158',
+309 silly addNameRange     '1.0.30000157',
+309 silly addNameRange     '1.0.30000156',
+309 silly addNameRange     '1.0.30000155',
+309 silly addNameRange     '1.0.30000154',
+309 silly addNameRange     '1.0.30000153',
+309 silly addNameRange     '1.0.30000152',
+309 silly addNameRange     '1.0.30000151',
+309 silly addNameRange     '1.0.30000150',
+309 silly addNameRange     '1.0.30000149',
+309 silly addNameRange     '1.0.30000148',
+309 silly addNameRange     '1.0.30000147',
+309 silly addNameRange     '1.0.30000146',
+309 silly addNameRange     '1.0.30000145',
+309 silly addNameRange     '1.0.30000144',
+309 silly addNameRange     '1.0.30000143',
+309 silly addNameRange     '1.0.30000142',
+309 silly addNameRange     '1.0.30000141',
+309 silly addNameRange     '1.0.30000140',
+309 silly addNameRange     '1.0.30000139',
+309 silly addNameRange     '1.0.30000138',
+309 silly addNameRange     '1.0.30000137',
+309 silly addNameRange     '1.0.30000136',
+309 silly addNameRange     '1.0.30000135',
+309 silly addNameRange     '1.0.30000134',
+309 silly addNameRange     '1.0.30000133',
+309 silly addNameRange     '1.0.30000132',
+309 silly addNameRange     '1.0.30000131',
+309 silly addNameRange     '1.0.30000130',
+309 silly addNameRange     '1.0.30000129',
+309 silly addNameRange     '1.0.30000128',
+309 silly addNameRange     '1.0.30000127',
+309 silly addNameRange     '1.0.30000126',
+309 silly addNameRange     '1.0.30000125',
+309 silly addNameRange     '1.0.30000124',
+309 silly addNameRange     '1.0.30000123',
+309 silly addNameRange     '1.0.30000121',
+309 silly addNameRange     '1.0.30000120',
+309 silly addNameRange     '1.0.30000119',
+309 silly addNameRange     '1.0.30000118',
+309 silly addNameRange     '1.0.30000117',
+309 silly addNameRange     '1.0.30000116',
+309 silly addNameRange     '1.0.30000115',
+309 silly addNameRange     '1.0.30000114',
+309 silly addNameRange     '1.0.30000113',
+309 silly addNameRange     '1.0.30000112',
+309 silly addNameRange     '1.0.30000111',
+309 silly addNameRange     '1.0.30000110',
+309 silly addNameRange     '1.0.30000109',
+309 silly addNameRange     '1.0.30000108',
+309 silly addNameRange     '1.0.30000106',
+309 silly addNameRange     '1.0.30000107',
+309 silly addNameRange     '1.0.30000105',
+309 silly addNameRange     '1.0.30000104',
+309 silly addNameRange     '1.0.30000103',
+309 silly addNameRange     '1.0.30000102',
+309 silly addNameRange     '1.0.30000101',
+309 silly addNameRange     '1.0.30000100',
+309 silly addNameRange     '1.0.30000099',
+309 silly addNameRange     '1.0.30000098',
+309 silly addNameRange     '1.0.30000097',
+309 silly addNameRange     '1.0.30000096',
+309 silly addNameRange     '1.0.30000095',
+309 silly addNameRange     '1.0.30000094',
+309 silly addNameRange     '1.0.30000093',
+309 silly addNameRange     '1.0.30000092',
+309 silly addNameRange     '1.0.30000091',
+309 silly addNameRange     '1.0.30000090',
+309 silly addNameRange     '1.0.30000089',
+309 silly addNameRange     '1.0.30000088',
+309 silly addNameRange     '1.0.30000087',
+309 silly addNameRange     '1.0.30000086',
+309 silly addNameRange     '1.0.30000085',
+309 silly addNameRange     '1.0.30000084',
+309 silly addNameRange     '1.0.30000083',
+309 silly addNameRange     '1.0.30000082',
+309 silly addNameRange     '1.0.30000081',
+309 silly addNameRange     '1.0.30000080',
+309 silly addNameRange     '1.0.30000079',
+309 silly addNameRange     '1.0.30000078',
+309 silly addNameRange     '1.0.30000077',
+309 silly addNameRange     '1.0.30000076',
+309 silly addNameRange     '1.0.30000075',
+309 silly addNameRange     '1.0.30000074',
+309 silly addNameRange     '1.0.30000073',
+309 silly addNameRange     '1.0.30000072',
+309 silly addNameRange     '1.0.30000071',
+309 silly addNameRange     '1.0.30000070',
+309 silly addNameRange     '1.0.30000069',
+309 silly addNameRange     '1.0.30000068',
+309 silly addNameRange     '1.0.30000067',
+309 silly addNameRange     '1.0.30000066',
+309 silly addNameRange     '1.0.30000065',
+309 silly addNameRange     '1.0.30000064',
+309 silly addNameRange     '1.0.30000063',
+309 silly addNameRange     '1.0.30000062',
+309 silly addNameRange     '1.0.30000061',
+309 silly addNameRange     '1.0.30000060',
+309 silly addNameRange     '1.0.30000059',
+309 silly addNameRange     '1.0.30000058',
+309 silly addNameRange     '1.0.30000057',
+309 silly addNameRange     '1.0.30000056',
+309 silly addNameRange     '1.0.30000055',
+309 silly addNameRange     '1.0.30000054',
+309 silly addNameRange     '1.0.30000053',
+309 silly addNameRange     '1.0.30000052',
+309 silly addNameRange     '1.0.30000051',
+309 silly addNameRange     '1.0.30000050',
+309 silly addNameRange     '1.0.30000049',
+309 silly addNameRange     '1.0.30000048',
+309 silly addNameRange     '1.0.30000047',
+309 silly addNameRange     '1.0.30000046',
+309 silly addNameRange     '1.0.30000045',
+309 silly addNameRange     '1.0.30000044',
+309 silly addNameRange     '1.0.30000043',
+309 silly addNameRange     '1.0.30000042',
+309 silly addNameRange     '1.0.30000041',
+309 silly addNameRange     '1.0.30000040',
+309 silly addNameRange     '1.0.30000039',
+309 silly addNameRange     '1.0.30000038',
+309 silly addNameRange     '1.0.30000037',
+309 silly addNameRange     '1.0.30000036',
+309 silly addNameRange     '1.0.30000035',
+309 silly addNameRange     '1.0.30000034',
+309 silly addNameRange     '1.0.30000033',
+309 silly addNameRange     '1.0.30000032',
+309 silly addNameRange     '1.0.30000031',
+309 silly addNameRange     '1.0.30000030',
+309 silly addNameRange     '1.0.30000029',
+309 silly addNameRange     '1.0.30000028',
+309 silly addNameRange     '1.0.30000027',
+309 silly addNameRange     '1.0.30000026',
+309 silly addNameRange     '1.0.30000025',
+309 silly addNameRange     '1.0.30000024',
+309 silly addNameRange     '1.0.30000023',
+309 silly addNameRange     '1.0.30000022',
+309 silly addNameRange     '1.0.30000021',
+309 silly addNameRange     '1.0.30000020',
+309 silly addNameRange     '1.0.30000019',
+309 silly addNameRange     '1.0.30000018',
+309 silly addNameRange     '1.0.30000017',
+309 silly addNameRange     '1.0.30000016',
+309 silly addNameRange     '1.0.30000015',
+309 silly addNameRange     '1.0.30000014',
+309 silly addNameRange     '1.0.30000013',
+309 silly addNameRange     '1.0.30000012',
+309 silly addNameRange     '1.0.30000011',
+309 silly addNameRange     '1.0.30000010',
+309 silly addNameRange     '1.0.30000009',
+309 silly addNameRange     '1.0.30000008',
+309 silly addNameRange     '1.0.30000007',
+309 silly addNameRange     '1.0.30000006',
+309 silly addNameRange     '1.0.30000005',
+309 silly addNameRange     '1.0.30000004',
+309 silly addNameRange     '1.0.30000003',
+309 silly addNameRange     '1.0.30000002',
+309 silly addNameRange     '1.0.30000001',
+309 silly addNameRange     '1.0.20141008',
+309 silly addNameRange     '1.0.20141007',
+309 silly addNameRange     '1.0.20141006',
+309 silly addNameRange     '1.0.20141001',
+309 silly addNameRange     '1.0.20140929',
+309 silly addNameRange     '1.0.20140928',
+309 silly addNameRange     '1.0.20140924',
+309 silly addNameRange     '1.0.20140922',
+309 silly addNameRange     '1.0.20140918',
+309 silly addNameRange     '1.0.20140916',
+309 silly addNameRange     '1.0.20140915',
+309 silly addNameRange     '1.0.20140911',
+309 silly addNameRange     '1.0.20140910',
+309 silly addNameRange     '1.0.20140909',
+309 silly addNameRange     '1.0.20140908',
+309 silly addNameRange     '1.0.20140906',
+309 silly addNameRange     '1.0.20140903',
+309 silly addNameRange     '1.0.20140902',
+309 silly addNameRange     '1.0.20140827',
+309 silly addNameRange     '1.0.20140826',
+309 silly addNameRange     '1.0.20140821',
+309 silly addNameRange     '1.0.20140820',
+309 silly addNameRange     '1.0.20140816',
+309 silly addNameRange     '1.0.20140815',
+309 silly addNameRange     '1.0.20140814',
+309 silly addNameRange     '1.0.20140812',
+309 silly addNameRange     '1.0.20140811',
+309 silly addNameRange     '1.0.20140810',
+309 silly addNameRange     '1.0.20140804',
+309 silly addNameRange     '1.0.20140801',
+309 silly addNameRange     '1.0.20140731',
+309 silly addNameRange     '1.0.20140730',
+309 silly addNameRange     '1.0.20140729',
+309 silly addNameRange     '1.0.20140728',
+309 silly addNameRange     '1.0.20140727',
+309 silly addNameRange     '1.0.20140726',
+309 silly addNameRange     '1.0.20140724',
+309 silly addNameRange     '1.0.20140722',
+309 silly addNameRange     '1.0.20140721',
+309 silly addNameRange     '1.0.20140717',
+309 silly addNameRange     '1.0.20140716',
+309 silly addNameRange     '1.0.20140715',
+309 silly addNameRange     '1.0.20140710',
+309 silly addNameRange     '1.0.20140702',
+309 silly addNameRange     '1.0.20140628',
+309 silly addNameRange     '1.0.20140626',
+309 silly addNameRange     '1.0.20140623',
+309 silly addNameRange     '1.0.20140622',
+309 silly addNameRange     '1.0.20140619',
+309 silly addNameRange     '1.0.20140618',
+309 silly addNameRange     '1.0.20140617',
+309 silly addNameRange     '1.0.20140616',
+309 silly addNameRange     '1.0.20140611',
+309 silly addNameRange     '1.0.20140610',
+309 silly addNameRange     '1.0.20140609',
+309 silly addNameRange     '1.0.20140608',
+309 silly addNameRange     '1.0.20140606',
+309 silly addNameRange     '1.0.20140603',
+309 silly addNameRange     '1.0.20140602',
+309 silly addNameRange     '1.0.20140601',
+309 silly addNameRange     '1.0.20140529',
+309 silly addNameRange     '1.0.20140526',
+309 silly addNameRange     '1.0.20140523',
+309 silly addNameRange     '1.0.20140521',
+309 silly addNameRange     '1.0.20140520',
+309 silly addNameRange     '1.0.20140519',
+309 silly addNameRange     '1.0.20140516',
+309 silly addNameRange     '1.0.20140511',
+309 silly addNameRange     '1.0.20140507',
+309 silly addNameRange     '1.0.20140506',
+309 silly addNameRange     '1.0.20140505',
+309 silly addNameRange     '1.0.20140504',
+309 silly addNameRange     '1.0.20140502',
+309 silly addNameRange     '1.0.20140429',
+309 silly addNameRange     '1.0.20140428',
+309 silly addNameRange     '1.0.20140422',
+309 silly addNameRange     '1.0.20140416',
+309 silly addNameRange     '1.0.20140412',
+309 silly addNameRange     '1.0.20140409',
+309 silly addNameRange     '1.0.20140403',
+309 silly addNameRange     '1.0.20140401',
+309 silly addNameRange     '1.0.20140331',
+309 silly addNameRange     '1.0.20140330',
+309 silly addNameRange     '1.0.20140326',
+309 silly addNameRange     '1.0.20140325',
+309 silly addNameRange     '1.0.20140319',
+309 silly addNameRange     '1.0.20140318',
+309 silly addNameRange     '1.0.20140316',
+309 silly addNameRange     '1.0.20140313',
+309 silly addNameRange     '1.0.20140311',
+309 silly addNameRange     '1.0.20140306',
+309 silly addNameRange     '1.0.20140304',
+309 silly addNameRange     '1.0.20140303',
+309 silly addNameRange     '1.0.20140302',
+309 silly addNameRange     '1.0.20140301',
+309 silly addNameRange     '1.0.20140226',
+309 silly addNameRange     '1.0.20140225',
+309 silly addNameRange     '1.0.20140224' ] ]
+310 http 304 https://registry.npm.taobao.org/postcss
+311 silly get cb [ 304,
+311 silly get   { date: 'Sun, 27 Dec 2015 01:21:10 GMT',
+311 silly get     connection: 'keep-alive',
+311 silly get     etag: '"1c4fa-S5UI3lfnul37GN0VyznveA"',
+311 silly get     'x-readtime': '212' } ]
+312 verbose etag https://registry.npm.taobao.org/postcss from cache
+313 verbose get saving postcss to /Users/liuxin/.npm/registry.npm.taobao.org/postcss/.cache.json
+314 silly addNameRange number 2 { name: 'postcss', range: '>=5.0.13 <6.0.0', hasData: true }
+315 silly addNameRange versions [ 'postcss',
+315 silly addNameRange   [ '5.0.13',
+315 silly addNameRange     '5.0.12',
+315 silly addNameRange     '5.0.11',
+315 silly addNameRange     '5.0.10',
+315 silly addNameRange     '5.0.9',
+315 silly addNameRange     '5.0.8',
+315 silly addNameRange     '5.0.7',
+315 silly addNameRange     '5.0.6',
+315 silly addNameRange     '5.0.5',
+315 silly addNameRange     '5.0.4',
+315 silly addNameRange     '5.0.3',
+315 silly addNameRange     '5.0.2',
+315 silly addNameRange     '5.0.1',
+315 silly addNameRange     '5.0.0',
+315 silly addNameRange     '4.1.16',
+315 silly addNameRange     '4.1.15',
+315 silly addNameRange     '4.1.14',
+315 silly addNameRange     '4.1.13',
+315 silly addNameRange     '4.1.12',
+315 silly addNameRange     '4.1.11',
+315 silly addNameRange     '4.1.10',
+315 silly addNameRange     '4.1.9',
+315 silly addNameRange     '4.1.8',
+315 silly addNameRange     '4.1.7',
+315 silly addNameRange     '4.1.6',
+315 silly addNameRange     '4.1.5',
+315 silly addNameRange     '4.1.4',
+315 silly addNameRange     '4.1.3',
+315 silly addNameRange     '4.1.2',
+315 silly addNameRange     '4.1.1',
+315 silly addNameRange     '4.1.0',
+315 silly addNameRange     '4.0.6',
+315 silly addNameRange     '4.0.5',
+315 silly addNameRange     '4.0.4',
+315 silly addNameRange     '4.0.3',
+315 silly addNameRange     '4.0.2',
+315 silly addNameRange     '4.0.1',
+315 silly addNameRange     '4.0.0',
+315 silly addNameRange     '3.0.7',
+315 silly addNameRange     '3.0.6',
+315 silly addNameRange     '3.0.5',
+315 silly addNameRange     '3.0.4',
+315 silly addNameRange     '3.0.3',
+315 silly addNameRange     '3.0.2',
+315 silly addNameRange     '3.0.1',
+315 silly addNameRange     '3.0.0',
+315 silly addNameRange     '2.2.6',
+315 silly addNameRange     '2.2.5',
+315 silly addNameRange     '2.2.4',
+315 silly addNameRange     '2.2.3',
+315 silly addNameRange     '2.2.2',
+315 silly addNameRange     '2.2.1',
+315 silly addNameRange     '2.2.0',
+315 silly addNameRange     '2.1.2',
+315 silly addNameRange     '2.1.1',
+315 silly addNameRange     '2.1.0',
+315 silly addNameRange     '2.0.0',
+315 silly addNameRange     '1.0.0',
+315 silly addNameRange     '0.3.5',
+315 silly addNameRange     '0.3.4',
+315 silly addNameRange     '0.3.3',
+315 silly addNameRange     '0.3.2',
+315 silly addNameRange     '0.3.1',
+315 silly addNameRange     '0.3.0',
+315 silly addNameRange     '0.2.0',
+315 silly addNameRange     '0.1.0' ] ]
+316 silly addNamed postcss@5.0.13
+317 verbose addNamed "5.0.13" is a plain semver version for postcss
+318 silly cache afterAdd postcss@5.0.13
+319 verbose afterAdd /Users/liuxin/.npm/postcss/5.0.13/package/package.json not in flight; writing
+320 verbose afterAdd /Users/liuxin/.npm/postcss/5.0.13/package/package.json written
+321 http 304 https://registry.npm.taobao.org/postcss-value-parser
+322 silly get cb [ 304,
+322 silly get   { date: 'Sun, 27 Dec 2015 01:21:10 GMT',
+322 silly get     connection: 'keep-alive',
+322 silly get     etag: '"b221-ftPZ6tZhFOMyIHeGV0sXPA"',
+322 silly get     'x-readtime': '26' } ]
+323 verbose etag https://registry.npm.taobao.org/postcss-value-parser from cache
+324 verbose get saving postcss-value-parser to /Users/liuxin/.npm/registry.npm.taobao.org/postcss-value-parser/.cache.json
+325 silly addNameRange number 2 { name: 'postcss-value-parser',
+325 silly addNameRange   range: '>=3.2.3 <4.0.0',
+325 silly addNameRange   hasData: true }
+326 silly addNameRange versions [ 'postcss-value-parser',
+326 silly addNameRange   [ '3.2.3',
+326 silly addNameRange     '3.2.1',
+326 silly addNameRange     '3.2.0',
+326 silly addNameRange     '3.1.3',
+326 silly addNameRange     '3.1.2',
+326 silly addNameRange     '3.1.1',
+326 silly addNameRange     '3.1.0',
+326 silly addNameRange     '3.0.3',
+326 silly addNameRange     '3.0.2',
+326 silly addNameRange     '3.0.1',
+326 silly addNameRange     '3.0.0',
+326 silly addNameRange     '2.0.5',
+326 silly addNameRange     '2.0.4',
+326 silly addNameRange     '2.0.3',
+326 silly addNameRange     '2.0.2',
+326 silly addNameRange     '2.0.1',
+326 silly addNameRange     '2.0.0',
+326 silly addNameRange     '1.4.2',
+326 silly addNameRange     '1.4.1',
+326 silly addNameRange     '1.4.0',
+326 silly addNameRange     '1.3.0',
+326 silly addNameRange     '1.2.2',
+326 silly addNameRange     '1.2.1',
+326 silly addNameRange     '1.2.0',
+326 silly addNameRange     '1.1.0',
+326 silly addNameRange     '1.0.2',
+326 silly addNameRange     '1.0.1',
+326 silly addNameRange     '1.0.0' ] ]
+327 silly addNamed postcss-value-parser@3.2.3
+328 verbose addNamed "3.2.3" is a plain semver version for postcss-value-parser
+329 silly cache afterAdd postcss-value-parser@3.2.3
+330 verbose afterAdd /Users/liuxin/.npm/postcss-value-parser/3.2.3/package/package.json not in flight; writing
+331 verbose afterAdd /Users/liuxin/.npm/postcss-value-parser/3.2.3/package/package.json written
+332 verbose about to build /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+333 verbose unlock done using /Users/liuxin/.npm/_locks/autoprefixer-3993e863186a6d23.lock for /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+334 verbose stack Error: No compatible version found: caniuse-db@'>=1.0.30000382 <2.0.0'
+334 verbose stack Valid install targets:
+334 verbose stack ["1.0.30000381","1.0.30000380","1.0.30000379","1.0.30000378","1.0.30000377","1.0.30000376","1.0.30000375","1.0.30000374","1.0.30000373","1.0.30000372","1.0.30000371","1.0.30000370","1.0.30000369","1.0.30000368","1.0.30000367","1.0.30000366","1.0.30000365","1.0.30000364","1.0.30000363","1.0.30000362","1.0.30000361","1.0.30000360","1.0.30000359","1.0.30000358","1.0.30000357","1.0.30000356","1.0.30000355","1.0.30000354","1.0.30000353","1.0.30000352","1.0.30000351","1.0.30000350","1.0.30000349","1.0.30000348","1.0.30000347","1.0.30000346","1.0.30000345","1.0.30000344","1.0.30000343","1.0.30000342","1.0.30000341","1.0.30000340","1.0.30000339","1.0.30000338","1.0.30000337","1.0.30000336","1.0.30000335","1.0.30000334","1.0.30000333","1.0.30000332","1.0.30000331","1.0.30000330","1.0.30000329","1.0.30000328","1.0.30000327","1.0.30000326","1.0.30000325","1.0.30000324","1.0.30000323","1.0.30000322","1.0.30000321","1.0.30000320","1.0.30000319","1.0.30000318","1.0.30000317","1.0.30000316","1.0.30000315","1.0.30000314","1.0.30000313","1.0.30000312","1.0.30000311","1.0.30000310","1.0.30000309","1.0.30000308","1.0.30000307","1.0.30000306","1.0.30000305","1.0.30000304","1.0.30000303","1.0.30000302","1.0.30000301","1.0.30000300","1.0.30000299","1.0.30000298","1.0.30000297","1.0.30000296","1.0.30000295","1.0.30000294","1.0.30000293","1.0.30000292","1.0.30000291","1.0.30000290","1.0.30000289","1.0.30000288","1.0.30000287","1.0.30000286","1.0.30000285","1.0.30000284","1.0.30000283","1.0.30000282","1.0.30000281","1.0.30000280","1.0.30000279","1.0.30000278","1.0.30000277","1.0.30000276","1.0.30000275","1.0.30000274","1.0.30000273","1.0.30000272","1.0.30000271","1.0.30000270","1.0.30000269","1.0.30000268","1.0.30000267","1.0.30000266","1.0.30000265","1.0.30000264","1.0.30000263","1.0.30000261","1.0.30000262","1.0.30000260","1.0.30000259","1.0.30000258","1.0.30000257","1.0.30000256","1.0.30000255","1.0.30000254","1.0.30000253","1.0.30000252","1.0.30000251","1.0.30000250","1.0.30000249","1.0.30000248","1.0.30000247","1.0.30000246","1.0.30000245","1.0.30000244","1.0.30000243","1.0.30000242","1.0.30000241","1.0.30000240","1.0.30000239","1.0.30000238","1.0.30000237","1.0.30000236","1.0.30000235","1.0.30000234","1.0.30000233","1.0.30000232","1.0.30000231","1.0.30000230","1.0.30000229","1.0.30000228","1.0.30000227","1.0.30000226","1.0.30000225","1.0.30000224","1.0.30000223","1.0.30000222","1.0.30000221","1.0.30000219","1.0.30000218","1.0.30000217","1.0.30000216","1.0.30000215","1.0.30000214","1.0.30000213","1.0.30000212","1.0.30000211","1.0.30000210","1.0.30000209","1.0.30000208","1.0.30000207","1.0.30000206","1.0.30000205","1.0.30000204","1.0.30000202","1.0.30000203","1.0.30000201","1.0.30000200","1.0.30000199","1.0.30000198","1.0.30000197","1.0.30000196","1.0.30000195","1.0.30000194","1.0.30000193","1.0.30000192","1.0.30000191","1.0.30000190","1.0.30000189","1.0.30000188","1.0.30000187","1.0.30000186","1.0.30000185","1.0.30000184","1.0.30000183","1.0.30000182","1.0.30000181","1.0.30000180","1.0.30000179","1.0.30000178","1.0.30000177","1.0.30000176","1.0.30000175","1.0.30000174","1.0.30000173","1.0.30000172","1.0.30000171","1.0.30000170","1.0.30000169","1.0.30000168","1.0.30000167","1.0.30000166","1.0.30000165","1.0.30000164","1.0.30000163","1.0.30000162","1.0.30000161","1.0.30000160","1.0.30000159","1.0.30000158","1.0.30000157","1.0.30000156","1.0.30000155","1.0.30000154","1.0.30000153","1.0.30000152","1.0.30000151","1.0.30000150","1.0.30000149","1.0.30000148","1.0.30000147","1.0.30000146","1.0.30000145","1.0.30000144","1.0.30000143","1.0.30000142","1.0.30000141","1.0.30000140","1.0.30000139","1.0.30000138","1.0.30000137","1.0.30000136","1.0.30000135","1.0.30000134","1.0.30000133","1.0.30000132","1.0.30000131","1.0.30000130","1.0.30000129","1.0.30000128","1.0.30000127","1.0.30000126","1.0.30000125","1.0.30000124","1.0.30000123","1.0.30000121","1.0.30000120","1.0.30000119","1.0.30000118","1.0.30000117","1.0.30000116","1.0.30000115","1.0.30000114","1.0.30000113","1.0.30000112","1.0.30000111","1.0.30000110","1.0.30000109","1.0.30000108","1.0.30000106","1.0.30000107","1.0.30000105","1.0.30000104","1.0.30000103","1.0.30000102","1.0.30000101","1.0.30000100","1.0.30000099","1.0.30000098","1.0.30000097","1.0.30000096","1.0.30000095","1.0.30000094","1.0.30000093","1.0.30000092","1.0.30000091","1.0.30000090","1.0.30000089","1.0.30000088","1.0.30000087","1.0.30000086","1.0.30000085","1.0.30000084","1.0.30000083","1.0.30000082","1.0.30000081","1.0.30000080","1.0.30000079","1.0.30000078","1.0.30000077","1.0.30000076","1.0.30000075","1.0.30000074","1.0.30000073","1.0.30000072","1.0.30000071","1.0.30000070","1.0.30000069","1.0.30000068","1.0.30000067","1.0.30000066","1.0.30000065","1.0.30000064","1.0.30000063","1.0.30000062","1.0.30000061","1.0.30000060","1.0.30000059","1.0.30000058","1.0.30000057","1.0.30000056","1.0.30000055","1.0.30000054","1.0.30000053","1.0.30000052","1.0.30000051","1.0.30000050","1.0.30000049","1.0.30000048","1.0.30000047","1.0.30000046","1.0.30000045","1.0.30000044","1.0.30000043","1.0.30000042","1.0.30000041","1.0.30000040","1.0.30000039","1.0.30000038","1.0.30000037","1.0.30000036","1.0.30000035","1.0.30000034","1.0.30000033","1.0.30000032","1.0.30000031","1.0.30000030","1.0.30000029","1.0.30000028","1.0.30000027","1.0.30000026","1.0.30000025","1.0.30000024","1.0.30000023","1.0.30000022","1.0.30000021","1.0.30000020","1.0.30000019","1.0.30000018","1.0.30000017","1.0.30000016","1.0.30000015","1.0.30000014","1.0.30000013","1.0.30000012","1.0.30000011","1.0.30000010","1.0.30000009","1.0.30000008","1.0.30000007","1.0.30000006","1.0.30000005","1.0.30000004","1.0.30000003","1.0.30000002","1.0.30000001","1.0.20141008","1.0.20141007","1.0.20141006","1.0.20141001","1.0.20140929","1.0.20140928","1.0.20140924","1.0.20140922","1.0.20140918","1.0.20140916","1.0.20140915","1.0.20140911","1.0.20140910","1.0.20140909","1.0.20140908","1.0.20140906","1.0.20140903","1.0.20140902","1.0.20140827","1.0.20140826","1.0.20140821","1.0.20140820","1.0.20140816","1.0.20140815","1.0.20140814","1.0.20140812","1.0.20140811","1.0.20140810","1.0.20140804","1.0.20140801","1.0.20140731","1.0.20140730","1.0.20140729","1.0.20140728","1.0.20140727","1.0.20140726","1.0.20140724","1.0.20140722","1.0.20140721","1.0.20140717","1.0.20140716","1.0.20140715","1.0.20140710","1.0.20140702","1.0.20140628","1.0.20140626","1.0.20140623","1.0.20140622","1.0.20140619","1.0.20140618","1.0.20140617","1.0.20140616","1.0.20140611","1.0.20140610","1.0.20140609","1.0.20140608","1.0.20140606","1.0.20140603","1.0.20140602","1.0.20140601","1.0.20140529","1.0.20140526","1.0.20140523","1.0.20140521","1.0.20140520","1.0.20140519","1.0.20140516","1.0.20140511","1.0.20140507","1.0.20140506","1.0.20140505","1.0.20140504","1.0.20140502","1.0.20140429","1.0.20140428","1.0.20140422","1.0.20140416","1.0.20140412","1.0.20140409","1.0.20140403","1.0.20140401","1.0.20140331","1.0.20140330","1.0.20140326","1.0.20140325","1.0.20140319","1.0.20140318","1.0.20140316","1.0.20140313","1.0.20140311","1.0.20140306","1.0.20140304","1.0.20140303","1.0.20140302","1.0.20140301","1.0.20140226","1.0.20140225","1.0.20140224"]
+334 verbose stack
+334 verbose stack     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:278:12)
+334 verbose stack     at next (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:256:19)
+334 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:230:5)
+334 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+334 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+334 verbose stack     at fixName (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+334 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+334 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+334 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+335 verbose cwd /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+336 error Darwin 15.2.0
+337 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+338 error node v4.1.0
+339 error npm  v2.14.3
+340 error code ETARGET
+341 error notarget No compatible version found: caniuse-db@'>=1.0.30000382 <2.0.0'
+341 error notarget Valid install targets:
+341 error notarget ["1.0.30000381","1.0.30000380","1.0.30000379","1.0.30000378","1.0.30000377","1.0.30000376","1.0.30000375","1.0.30000374","1.0.30000373","1.0.30000372","1.0.30000371","1.0.30000370","1.0.30000369","1.0.30000368","1.0.30000367","1.0.30000366","1.0.30000365","1.0.30000364","1.0.30000363","1.0.30000362","1.0.30000361","1.0.30000360","1.0.30000359","1.0.30000358","1.0.30000357","1.0.30000356","1.0.30000355","1.0.30000354","1.0.30000353","1.0.30000352","1.0.30000351","1.0.30000350","1.0.30000349","1.0.30000348","1.0.30000347","1.0.30000346","1.0.30000345","1.0.30000344","1.0.30000343","1.0.30000342","1.0.30000341","1.0.30000340","1.0.30000339","1.0.30000338","1.0.30000337","1.0.30000336","1.0.30000335","1.0.30000334","1.0.30000333","1.0.30000332","1.0.30000331","1.0.30000330","1.0.30000329","1.0.30000328","1.0.30000327","1.0.30000326","1.0.30000325","1.0.30000324","1.0.30000323","1.0.30000322","1.0.30000321","1.0.30000320","1.0.30000319","1.0.30000318","1.0.30000317","1.0.30000316","1.0.30000315","1.0.30000314","1.0.30000313","1.0.30000312","1.0.30000311","1.0.30000310","1.0.30000309","1.0.30000308","1.0.30000307","1.0.30000306","1.0.30000305","1.0.30000304","1.0.30000303","1.0.30000302","1.0.30000301","1.0.30000300","1.0.30000299","1.0.30000298","1.0.30000297","1.0.30000296","1.0.30000295","1.0.30000294","1.0.30000293","1.0.30000292","1.0.30000291","1.0.30000290","1.0.30000289","1.0.30000288","1.0.30000287","1.0.30000286","1.0.30000285","1.0.30000284","1.0.30000283","1.0.30000282","1.0.30000281","1.0.30000280","1.0.30000279","1.0.30000278","1.0.30000277","1.0.30000276","1.0.30000275","1.0.30000274","1.0.30000273","1.0.30000272","1.0.30000271","1.0.30000270","1.0.30000269","1.0.30000268","1.0.30000267","1.0.30000266","1.0.30000265","1.0.30000264","1.0.30000263","1.0.30000261","1.0.30000262","1.0.30000260","1.0.30000259","1.0.30000258","1.0.30000257","1.0.30000256","1.0.30000255","1.0.30000254","1.0.30000253","1.0.30000252","1.0.30000251","1.0.30000250","1.0.30000249","1.0.30000248","1.0.30000247","1.0.30000246","1.0.30000245","1.0.30000244","1.0.30000243","1.0.30000242","1.0.30000241","1.0.30000240","1.0.30000239","1.0.30000238","1.0.30000237","1.0.30000236","1.0.30000235","1.0.30000234","1.0.30000233","1.0.30000232","1.0.30000231","1.0.30000230","1.0.30000229","1.0.30000228","1.0.30000227","1.0.30000226","1.0.30000225","1.0.30000224","1.0.30000223","1.0.30000222","1.0.30000221","1.0.30000219","1.0.30000218","1.0.30000217","1.0.30000216","1.0.30000215","1.0.30000214","1.0.30000213","1.0.30000212","1.0.30000211","1.0.30000210","1.0.30000209","1.0.30000208","1.0.30000207","1.0.30000206","1.0.30000205","1.0.30000204","1.0.30000202","1.0.30000203","1.0.30000201","1.0.30000200","1.0.30000199","1.0.30000198","1.0.30000197","1.0.30000196","1.0.30000195","1.0.30000194","1.0.30000193","1.0.30000192","1.0.30000191","1.0.30000190","1.0.30000189","1.0.30000188","1.0.30000187","1.0.30000186","1.0.30000185","1.0.30000184","1.0.30000183","1.0.30000182","1.0.30000181","1.0.30000180","1.0.30000179","1.0.30000178","1.0.30000177","1.0.30000176","1.0.30000175","1.0.30000174","1.0.30000173","1.0.30000172","1.0.30000171","1.0.30000170","1.0.30000169","1.0.30000168","1.0.30000167","1.0.30000166","1.0.30000165","1.0.30000164","1.0.30000163","1.0.30000162","1.0.30000161","1.0.30000160","1.0.30000159","1.0.30000158","1.0.30000157","1.0.30000156","1.0.30000155","1.0.30000154","1.0.30000153","1.0.30000152","1.0.30000151","1.0.30000150","1.0.30000149","1.0.30000148","1.0.30000147","1.0.30000146","1.0.30000145","1.0.30000144","1.0.30000143","1.0.30000142","1.0.30000141","1.0.30000140","1.0.30000139","1.0.30000138","1.0.30000137","1.0.30000136","1.0.30000135","1.0.30000134","1.0.30000133","1.0.30000132","1.0.30000131","1.0.30000130","1.0.30000129","1.0.30000128","1.0.30000127","1.0.30000126","1.0.30000125","1.0.30000124","1.0.30000123","1.0.30000121","1.0.30000120","1.0.30000119","1.0.30000118","1.0.30000117","1.0.30000116","1.0.30000115","1.0.30000114","1.0.30000113","1.0.30000112","1.0.30000111","1.0.30000110","1.0.30000109","1.0.30000108","1.0.30000106","1.0.30000107","1.0.30000105","1.0.30000104","1.0.30000103","1.0.30000102","1.0.30000101","1.0.30000100","1.0.30000099","1.0.30000098","1.0.30000097","1.0.30000096","1.0.30000095","1.0.30000094","1.0.30000093","1.0.30000092","1.0.30000091","1.0.30000090","1.0.30000089","1.0.30000088","1.0.30000087","1.0.30000086","1.0.30000085","1.0.30000084","1.0.30000083","1.0.30000082","1.0.30000081","1.0.30000080","1.0.30000079","1.0.30000078","1.0.30000077","1.0.30000076","1.0.30000075","1.0.30000074","1.0.30000073","1.0.30000072","1.0.30000071","1.0.30000070","1.0.30000069","1.0.30000068","1.0.30000067","1.0.30000066","1.0.30000065","1.0.30000064","1.0.30000063","1.0.30000062","1.0.30000061","1.0.30000060","1.0.30000059","1.0.30000058","1.0.30000057","1.0.30000056","1.0.30000055","1.0.30000054","1.0.30000053","1.0.30000052","1.0.30000051","1.0.30000050","1.0.30000049","1.0.30000048","1.0.30000047","1.0.30000046","1.0.30000045","1.0.30000044","1.0.30000043","1.0.30000042","1.0.30000041","1.0.30000040","1.0.30000039","1.0.30000038","1.0.30000037","1.0.30000036","1.0.30000035","1.0.30000034","1.0.30000033","1.0.30000032","1.0.30000031","1.0.30000030","1.0.30000029","1.0.30000028","1.0.30000027","1.0.30000026","1.0.30000025","1.0.30000024","1.0.30000023","1.0.30000022","1.0.30000021","1.0.30000020","1.0.30000019","1.0.30000018","1.0.30000017","1.0.30000016","1.0.30000015","1.0.30000014","1.0.30000013","1.0.30000012","1.0.30000011","1.0.30000010","1.0.30000009","1.0.30000008","1.0.30000007","1.0.30000006","1.0.30000005","1.0.30000004","1.0.30000003","1.0.30000002","1.0.30000001","1.0.20141008","1.0.20141007","1.0.20141006","1.0.20141001","1.0.20140929","1.0.20140928","1.0.20140924","1.0.20140922","1.0.20140918","1.0.20140916","1.0.20140915","1.0.20140911","1.0.20140910","1.0.20140909","1.0.20140908","1.0.20140906","1.0.20140903","1.0.20140902","1.0.20140827","1.0.20140826","1.0.20140821","1.0.20140820","1.0.20140816","1.0.20140815","1.0.20140814","1.0.20140812","1.0.20140811","1.0.20140810","1.0.20140804","1.0.20140801","1.0.20140731","1.0.20140730","1.0.20140729","1.0.20140728","1.0.20140727","1.0.20140726","1.0.20140724","1.0.20140722","1.0.20140721","1.0.20140717","1.0.20140716","1.0.20140715","1.0.20140710","1.0.20140702","1.0.20140628","1.0.20140626","1.0.20140623","1.0.20140622","1.0.20140619","1.0.20140618","1.0.20140617","1.0.20140616","1.0.20140611","1.0.20140610","1.0.20140609","1.0.20140608","1.0.20140606","1.0.20140603","1.0.20140602","1.0.20140601","1.0.20140529","1.0.20140526","1.0.20140523","1.0.20140521","1.0.20140520","1.0.20140519","1.0.20140516","1.0.20140511","1.0.20140507","1.0.20140506","1.0.20140505","1.0.20140504","1.0.20140502","1.0.20140429","1.0.20140428","1.0.20140422","1.0.20140416","1.0.20140412","1.0.20140409","1.0.20140403","1.0.20140401","1.0.20140331","1.0.20140330","1.0.20140326","1.0.20140325","1.0.20140319","1.0.20140318","1.0.20140316","1.0.20140313","1.0.20140311","1.0.20140306","1.0.20140304","1.0.20140303","1.0.20140302","1.0.20140301","1.0.20140226","1.0.20140225","1.0.20140224"]
+341 error notarget
+341 error notarget This is most likely not a problem with npm itself.
+341 error notarget In most cases you or one of your dependencies are requesting
+341 error notarget a package version that doesn't exist.
+341 error notarget
+341 error notarget It was specified as a dependency of 'autoprefixer'
+342 verbose exit [ 1, true ]
+343 verbose unbuild node_modules/autoprefixer
+344 info preuninstall autoprefixer@6.2.2
+345 info uninstall autoprefixer@6.2.2
+346 verbose unbuild rmStuff autoprefixer@6.2.2 from /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules
+347 info postuninstall autoprefixer@6.2.2
+348 silly gentlyRm /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer is being purged from base /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react
+349 verbose gentlyRm don't care about contents; nuking /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+350 silly vacuum-fs purging /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules/autoprefixer
+351 silly vacuum-fs quitting because other entries in /Users/liuxin/Desktop/Hello_React/12-27/sikeio-buyshoes-react/node_modules

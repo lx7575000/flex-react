@@ -1,8 +1,13 @@
 const React = require("react");
 const Ps = require("perfect-scrollbar");
 
-const {cartItems,products} = require("../data");
+const {products} = require("../data");
 const QuantityControl = require("./QuantityControl");
+
+//step 1 
+//add CartStore to Cart
+const CartStore = require('../stores/CartStore');
+const {getCartItems, getCartItem, addCartItem} = CartStore;
 
 let Cart = React.createClass({
   componentDidMount() {
@@ -14,6 +19,7 @@ let Cart = React.createClass({
 
   renderCartItems() {
     // let cartItems = ...;
+    let cartItems = getCartItems();
     return Object.keys(cartItems).map(key => {
       let item = cartItems[key];
       return <CartItem key={key} item={item}/>

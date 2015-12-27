@@ -1,14 +1,23 @@
 const React = require("react");
 
-const {cartItems,products} = require("../data");
+const {products} = require("../data");
+//step 1 
+//add CartStore to Checkout View
+const CartStore = require('../stores/CartStore');
+const {getCartItems} = CartStore;
 
 let Checkout = React.createClass({
+  componentDidMount(){
+    CartStore.addChangeListener(this.forceUpdate.bind(this));
+  },
   render() {
     let subtotal = 0;
+    let cartItems = getCartItems();
     Object.keys(cartItems).forEach(key => {
       let {quantity} = cartItems[key];
       let {price} = products[key];
       subtotal += price * quantity;
+      subtotal = subtotal.toFixed(2);
     });
 
     return (

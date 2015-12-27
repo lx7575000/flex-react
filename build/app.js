@@ -20275,19 +20275,28 @@
 	
 	var _require = __webpack_require__(/*! ../data */ 162);
 	
-	var cartItems = _require.cartItems;
 	var products = _require.products;
+	
+	//step 1
+	//add CartStore to Checkout View
+	var CartStore = __webpack_require__(/*! ../stores/CartStore */ 186);
+	var getCartItems = CartStore.getCartItems;
 	
 	var Checkout = React.createClass({
 	  displayName: "Checkout",
 	
+	  componentDidMount: function componentDidMount() {
+	    CartStore.addChangeListener(this.forceUpdate.bind(this));
+	  },
 	  render: function render() {
 	    var subtotal = 0;
+	    var cartItems = getCartItems();
 	    Object.keys(cartItems).forEach(function (key) {
 	      var quantity = cartItems[key].quantity;
 	      var price = products[key].price;
 	
 	      subtotal += price * quantity;
+	      subtotal = subtotal.toFixed(2);
 	    });
 	
 	    return React.createElement(

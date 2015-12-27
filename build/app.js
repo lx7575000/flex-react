@@ -20466,7 +20466,7 @@
 	var CartStore = __webpack_require__(/*! ../stores/CartStore */ 186);
 	var getCartItems = CartStore.getCartItems;
 	var getCartItem = CartStore.getCartItem;
-	var addCartItem = CartStore.addCartItem;
+	var removeCartItem = CartStore.removeCartItem;
 	
 	var Cart = React.createClass({
 	  displayName: "Cart",
@@ -20515,6 +20515,10 @@
 	var CartItem = React.createClass({
 	  displayName: "CartItem",
 	
+	  //删除掉购物车中的Item
+	  ClickRmBtn: function ClickRmBtn(id) {
+	    removeCartItem(id);
+	  },
 	  render: function render() {
 	    var item = this.props.item;
 	    var _props$item = this.props.item;
@@ -20555,7 +20559,7 @@
 	            priceDisplay
 	          )
 	        ),
-	        React.createElement("img", { className: "cart-item__trash", src: "img/trash-icon.svg" })
+	        React.createElement("img", { className: "cart-item__trash", src: "img/trash-icon.svg", onClick: this.ClickRmBtn.bind(this, id) })
 	      ),
 	      " ",
 	      React.createElement(
@@ -22654,7 +22658,6 @@
 	  displayName: "Product",
 	
 	  //用来添加Item到Cart当中
-	  //
 	  clickAddBtn: function clickAddBtn(id) {
 	    addCartItem(id);
 	  },

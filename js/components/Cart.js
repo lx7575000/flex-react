@@ -7,7 +7,7 @@ const QuantityControl = require("./QuantityControl");
 //step 1 
 //add CartStore to Cart
 const CartStore = require('../stores/CartStore');
-const {getCartItems, getCartItem, addCartItem} = CartStore;
+const {getCartItems, getCartItem, removeCartItem} = CartStore;
 
 let Cart = React.createClass({
   componentDidMount() {
@@ -42,6 +42,10 @@ let Cart = React.createClass({
 });
 
 let CartItem = React.createClass({
+  //删除掉购物车中的Item
+  ClickRmBtn(id){
+    removeCartItem(id);
+  },
   render: function() {
     let {item} = this.props;
     let {id,quantity} = this.props.item;
@@ -68,7 +72,7 @@ let CartItem = React.createClass({
               {priceDisplay}
             </div>
           </div>
-          <img className="cart-item__trash" src="img/trash-icon.svg" />
+          <img className="cart-item__trash" src="img/trash-icon.svg" onClick={this.ClickRmBtn.bind(this, id)} />
         </div> {/* cart-item__top-part */}
 
         <div className="cart-item__qty">

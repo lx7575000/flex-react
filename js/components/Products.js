@@ -9,7 +9,6 @@ const {getCartItems, getCartItem, addCartItem} = CartStore;
 
 let Product = React.createClass({
   //用来添加Item到Cart当中
-  //
   clickAddBtn(id){
     addCartItem(id);
   },

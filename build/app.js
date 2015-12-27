@@ -22271,13 +22271,23 @@
 	"use strict";
 	
 	var React = __webpack_require__(/*! react */ 1);
+	//step 1
+	//add CartStore to QuantityControl
+	var CartStore = __webpack_require__(/*! ../stores/CartStore */ 186);
+	var updateCartItemQuantity = CartStore.updateCartItemQuantity;
 	
 	var QuantityControl = React.createClass({
 	  displayName: "QuantityControl",
 	
+	  ClickUpdateQuantity: function ClickUpdateQuantity(id, quantity) {
+	    updateCartItemQuantity(id, quantity);
+	  },
+	
 	  render: function render() {
 	    var variant = this.props.variant;
-	    var quantity = this.props.item.quantity;
+	    var _props$item = this.props.item;
+	    var id = _props$item.id;
+	    var quantity = _props$item.quantity;
 	
 	    var className = "adjust-qty";
 	    if (variant === "gray") {
@@ -22289,7 +22299,7 @@
 	      { className: className },
 	      React.createElement(
 	        "a",
-	        { className: "adjust-qty__button" },
+	        { className: "adjust-qty__button", onClick: this.ClickUpdateQuantity.bind(this, id, quantity - 1) },
 	        "-"
 	      ),
 	      React.createElement(
@@ -22299,7 +22309,7 @@
 	      ),
 	      React.createElement(
 	        "a",
-	        { className: "adjust-qty__button" },
+	        { className: "adjust-qty__button", onClick: this.ClickUpdateQuantity.bind(this, id, quantity + 1) },
 	        "+"
 	      )
 	    );
@@ -22347,6 +22357,10 @@
 	  },
 	  removeCartItem: function removeCartItem(id) {
 	    delete _cartItems[id];
+	    emitChange();
+	  },
+	  updateCartItemQuantity: function updateCartItemQuantity(id, quantity) {
+	    quantity > 0 ? _cartItems[id].quantity = quantity : delete _cartItems[id];
 	    emitChange();
 	  },
 	

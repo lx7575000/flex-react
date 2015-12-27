@@ -30,6 +30,10 @@ module.exports = {
     delete _cartItems[id];
     emitChange();
   },
+  updateCartItemQuantity(id,quantity){
+    quantity > 0 ? _cartItems[id].quantity = quantity : delete _cartItems[id];
+    emitChange();
+  },
 
   addChangeListener(callback) {
     emitter.addListener("change",callback)

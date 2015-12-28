@@ -9,6 +9,10 @@ const QuantityControl = require("./QuantityControl");
 const CartStore = require('../stores/CartStore');
 const {getCartItems, getCartItem, removeCartItem} = CartStore;
 
+//step 2
+//add ConnectedStore to Cart View
+const ConnectedStore = require('./ConnectedStore');
+
 let Cart = React.createClass({
   componentDidMount() {
     CartStore.addChangeListener(this.forceUpdate.bind(this));
@@ -18,8 +22,8 @@ let Cart = React.createClass({
   },
 
   renderCartItems() {
-    // let cartItems = ...;
-    let cartItems = getCartItems();
+    let {cartItems} = this.props;
+    // let cartItems = getCartItems();
     return Object.keys(cartItems).map(key => {
       let item = cartItems[key];
       return <CartItem key={key} item={item}/>
@@ -78,12 +82,24 @@ let CartItem = React.createClass({
         <div className="cart-item__qty">
           <QuantityControl item={item}/>
         </div>
-
-
-
       </div>
     );
   }
 });
 
-module.exports = Cart;
+//Step 2 Add ConnectedCart Class in Cart View
+let ConnectedCart = React.createClass({
+     render() {
+         return (
+             <ConnectedStore
+                 store={CartStore}
+                 propNames={['cartItems']}
+             >
+                 {props => <Cart {...props} />}
+             </ConnectedStore>
+         );
+     }
+     //props只传入了cartItems
+ });
+
+module.exports = ConnectedCart;

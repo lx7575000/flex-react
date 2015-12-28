@@ -10,6 +10,9 @@ let _cartItems = {};
 
 module.exports = {
   // 读方法
+  cartItems(){
+    return _cartItems;
+  },
   getCartItems(){
     return _cartItems;
   },

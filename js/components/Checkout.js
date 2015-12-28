@@ -12,12 +12,13 @@ let Checkout = React.createClass({
   },
   render() {
     let subtotal = 0;
+    let fixed_subtotal = 0;
     let cartItems = getCartItems();
     Object.keys(cartItems).forEach(key => {
       let {quantity} = cartItems[key];
       let {price} = products[key];
       subtotal += price * quantity;
-      subtotal = subtotal.toFixed(2);
+      fixed_subtotal = subtotal.toFixed(2);
     });
 
     return (
@@ -42,7 +43,7 @@ let Checkout = React.createClass({
             Subtotal
           </div>
           <div className="checkout__line__amount">
-            {`$${subtotal}`}
+            {`$${fixed_subtotal}`}
           </div>
         </div>
 

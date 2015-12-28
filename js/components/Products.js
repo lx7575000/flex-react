@@ -7,6 +7,10 @@ const {cartItems,products} = require("../data");
 const CartStore = require('../stores/CartStore');
 const {getCartItems, getCartItem, addCartItem} = CartStore;
 
+//step 2 
+//add LikeStore to Product View
+const LikeStore = require('../stores/LikeStore');
+
 let Product = React.createClass({
   //用来添加Item到Cart当中
   clickAddBtn(id){

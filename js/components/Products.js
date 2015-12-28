@@ -11,7 +11,8 @@ const {getCartItems, getCartItem, addCartItem} = CartStore;
 //add LikeStore to Product View
 const LikeStore = require('../stores/LikeStore');
 const {getLikedItems, addLikedItem, removeLikedItem} = LikeStore;
-
+//add ConnectedStore
+const ConnectedStore = require('./ConnectedStore');
 class Product extends React.Component{
   //用来添加Item到Cart当中
   clickAddBtn(id){
@@ -110,4 +111,34 @@ class Products extends React.Component{
   }
 };
 
+//Step 2 add ConnectedProducts in Products View
+class ConnectedProducts extends React.Component{
+  render(){
+    return (
+      <ConnectedStore
+        store={CartStore}
+        propNames={['cartItems']}
+      >
+      {
+        props => {
+          return (
+            <ConnectedStore
+              store={LikeStore}
+              propNames={['likedItems']}
+              initProps={props}
+            >
+              {props => <Products {...props}/>}
+            </ConnectedStore>
+          )
+        }
+      }
+
+      </ConnectedStore>
+    )
+  }
+}
+
+//step 1
 module.exports = Products;
+//step 2
+module.exports = ConnectedProducts;

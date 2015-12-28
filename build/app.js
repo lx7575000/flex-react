@@ -22781,6 +22781,9 @@
 	var addLikedItem = LikeStore.addLikedItem;
 	var removeLikedItem = LikeStore.removeLikedItem;
 	
+	//add ConnectedStore
+	var ConnectedStore = __webpack_require__(/*! ./ConnectedStore */ 188);
+	
 	var Product = (function (_React$Component) {
 	  _inherits(Product, _React$Component);
 	
@@ -22923,7 +22926,51 @@
 	
 	;
 	
+	//Step 2 add ConnectedProducts in Products View
+	
+	var ConnectedProducts = (function (_React$Component3) {
+	  _inherits(ConnectedProducts, _React$Component3);
+	
+	  function ConnectedProducts() {
+	    _classCallCheck(this, ConnectedProducts);
+	
+	    _get(Object.getPrototypeOf(ConnectedProducts.prototype), "constructor", this).apply(this, arguments);
+	  }
+	
+	  //step 1
+	
+	  _createClass(ConnectedProducts, [{
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        ConnectedStore,
+	        {
+	          store: CartStore,
+	          propNames: ['cartItems']
+	        },
+	        function (props) {
+	          return React.createElement(
+	            ConnectedStore,
+	            {
+	              store: LikeStore,
+	              propNames: ['likedItems'],
+	              initProps: props
+	            },
+	            function (props) {
+	              return React.createElement(Products, props);
+	            }
+	          );
+	        }
+	      );
+	    }
+	  }]);
+	
+	  return ConnectedProducts;
+	})(React.Component);
+	
 	module.exports = Products;
+	//step 2
+	module.exports = ConnectedProducts;
 
 /***/ },
 /* 190 */

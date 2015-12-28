@@ -10,12 +10,22 @@ const {getCartItems, getCartItem, addCartItem} = CartStore;
 //step 2 
 //add LikeStore to Product View
 const LikeStore = require('../stores/LikeStore');
+const {getLikedItems, addLikedItem, removeLikedItem} = LikeStore;
 
-let Product = React.createClass({
+class Product extends React.Component{
   //用来添加Item到Cart当中
   clickAddBtn(id){
     addCartItem(id);
-  },
+  }
+
+  clickLikedBtn(){
+    let pid = this.props.product.id;
+    if(this.props.isLiked){
+      removeLikedItem(pid);
+    }else{
+      addLikedItem(pid);
+    }
+  }
 
   render() {
     let {id,name,price,imagePath} = this.props.product;
@@ -31,7 +41,9 @@ let Product = React.createClass({
     } else {
       productControl = (
         <a className="product__add">
-          <img className="product__add__icon" src="img/cart-icon.svg" onClick={this.clickAddBtn.bind(this, id)} />
+          <img className="product__add__icon" src="img/cart-icon.svg" 
+               onClick={this.clickAddBtn.bind(this, id)} 
+          />
         </a>
       );
     }
@@ -58,28 +70,36 @@ let Product = React.createClass({
             {name}
           </div>
 
-          <img className="product__heart" src="img/heart.svg" />
+          <img className="product__heart" 
+               src={this.props.isLiked ? 'img/heart-liked.svg': "img/heart.svg"} 
+               onClick={this.clickLikedBtn.bind(this)}/>
         </div>
       </div>
     );
   }
-});
+};
 
-let Products = React.createClass({
+class Products extends React.Component{
   componentDidMount(){
     CartStore.addChangeListener(this.forceUpdate.bind(this));
-  },
+    LikeStore.addChangeListener(this.forceUpdate.bind(this));
+  }
   renderProducts() {
-    // let products ...
+    let likedItems = getLikedItems();
     let productViews = Object.keys(products).map(id => {
       let product = products[id];
+      let liked = typeof likedItems[id] !== 'undefined';
       return (
-        <Product key={id} product={product}/>
+        <Product 
+          key={id} 
+          product={product} 
+          isLiked={liked}
+        />
       );
     });
-
+    //添加了一个判断是否存在于另一个likedItems中。
     return productViews;
-  },
+  }
 
   render() {
     return (
@@ -87,7 +107,7 @@ let Products = React.createClass({
         {this.renderProducts()}
       </div>
     );
-  },
-});
+  }
+};
 
 module.exports = Products;

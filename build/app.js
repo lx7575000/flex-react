@@ -22751,6 +22751,14 @@
 
 	"use strict";
 	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
 	var React = __webpack_require__(/*! react */ 1);
 	var QuantityControl = __webpack_require__(/*! ./QuantityControl */ 187);
 	
@@ -22769,97 +22777,151 @@
 	//step 2
 	//add LikeStore to Product View
 	var LikeStore = __webpack_require__(/*! ../stores/LikeStore */ 190);
+	var getLikedItems = LikeStore.getLikedItems;
+	var addLikedItem = LikeStore.addLikedItem;
+	var removeLikedItem = LikeStore.removeLikedItem;
 	
-	var Product = React.createClass({
-	  displayName: "Product",
+	var Product = (function (_React$Component) {
+	  _inherits(Product, _React$Component);
 	
-	  //用来添加Item到Cart当中
-	  clickAddBtn: function clickAddBtn(id) {
-	    addCartItem(id);
-	  },
+	  function Product() {
+	    _classCallCheck(this, Product);
 	
-	  render: function render() {
-	    var _props$product = this.props.product;
-	    var id = _props$product.id;
-	    var name = _props$product.name;
-	    var price = _props$product.price;
-	    var imagePath = _props$product.imagePath;
+	    _get(Object.getPrototypeOf(Product.prototype), "constructor", this).apply(this, arguments);
+	  }
 	
-	    var item = getCartItem(id);
+	  _createClass(Product, [{
+	    key: "clickAddBtn",
 	
-	    var productControl = undefined;
-	    if (item != null) {
-	      var quantity = item.quantity;
+	    //用来添加Item到Cart当中
+	    value: function clickAddBtn(id) {
+	      addCartItem(id);
+	    }
+	  }, {
+	    key: "clickLikedBtn",
+	    value: function clickLikedBtn() {
+	      var pid = this.props.product.id;
+	      if (this.props.isLiked) {
+	        removeLikedItem(pid);
+	      } else {
+	        addLikedItem(pid);
+	      }
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      var _props$product = this.props.product;
+	      var id = _props$product.id;
+	      var name = _props$product.name;
+	      var price = _props$product.price;
+	      var imagePath = _props$product.imagePath;
 	
-	      productControl = React.createElement(QuantityControl, { item: item, variant: "gray" });
-	    } else {
-	      productControl = React.createElement(
-	        "a",
-	        { className: "product__add" },
-	        React.createElement("img", { className: "product__add__icon", src: "img/cart-icon.svg", onClick: this.clickAddBtn.bind(this, id) })
+	      var item = getCartItem(id);
+	
+	      var productControl = undefined;
+	      if (item != null) {
+	        var quantity = item.quantity;
+	
+	        productControl = React.createElement(QuantityControl, { item: item, variant: "gray" });
+	      } else {
+	        productControl = React.createElement(
+	          "a",
+	          { className: "product__add" },
+	          React.createElement("img", { className: "product__add__icon", src: "img/cart-icon.svg",
+	            onClick: this.clickAddBtn.bind(this, id)
+	          })
+	        );
+	      }
+	
+	      return React.createElement(
+	        "div",
+	        { className: "product" },
+	        React.createElement(
+	          "div",
+	          { className: "product__display" },
+	          React.createElement(
+	            "div",
+	            { className: "product__img-wrapper" },
+	            React.createElement("img", { className: "product__img", src: imagePath })
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "product__control" },
+	            productControl
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "product__price" },
+	            "$" + price
+	          )
+	        ),
+	        React.createElement(
+	          "div",
+	          { className: "product__description" },
+	          React.createElement(
+	            "div",
+	            { className: "product__name" },
+	            name
+	          ),
+	          React.createElement("img", { className: "product__heart",
+	            src: this.props.isLiked ? 'img/heart-liked.svg' : "img/heart.svg",
+	            onClick: this.clickLikedBtn.bind(this) })
+	        )
 	      );
 	    }
+	  }]);
 	
-	    return React.createElement(
-	      "div",
-	      { className: "product" },
-	      React.createElement(
-	        "div",
-	        { className: "product__display" },
-	        React.createElement(
-	          "div",
-	          { className: "product__img-wrapper" },
-	          React.createElement("img", { className: "product__img", src: imagePath })
-	        ),
-	        React.createElement(
-	          "div",
-	          { className: "product__control" },
-	          productControl
-	        ),
-	        React.createElement(
-	          "div",
-	          { className: "product__price" },
-	          "$" + price
-	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "product__description" },
-	        React.createElement(
-	          "div",
-	          { className: "product__name" },
-	          name
-	        ),
-	        React.createElement("img", { className: "product__heart", src: "img/heart.svg" })
-	      )
-	    );
+	  return Product;
+	})(React.Component);
+	
+	;
+	
+	var Products = (function (_React$Component2) {
+	  _inherits(Products, _React$Component2);
+	
+	  function Products() {
+	    _classCallCheck(this, Products);
+	
+	    _get(Object.getPrototypeOf(Products.prototype), "constructor", this).apply(this, arguments);
 	  }
-	});
 	
-	var Products = React.createClass({
-	  displayName: "Products",
+	  _createClass(Products, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      CartStore.addChangeListener(this.forceUpdate.bind(this));
+	      LikeStore.addChangeListener(this.forceUpdate.bind(this));
+	    }
+	  }, {
+	    key: "renderProducts",
+	    value: function renderProducts() {
+	      var likedItems = getLikedItems();
+	      var productViews = Object.keys(products).map(function (id) {
+	        var product = products[id];
+	        var liked = typeof likedItems[id] !== 'undefined';
+	        return React.createElement(Product, {
+	          key: id,
+	          product: product,
+	          isLiked: liked
+	        });
+	      });
+	      //添加了一个判断是否存在于另一个likedItems中。
+	      return productViews;
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "div",
+	        { ref: "products", className: "products" },
+	        this.renderProducts()
+	      );
+	    }
+	  }]);
 	
-	  componentDidMount: function componentDidMount() {
-	    CartStore.addChangeListener(this.forceUpdate.bind(this));
-	  },
-	  renderProducts: function renderProducts() {
-	    // let products ...
-	    var productViews = Object.keys(products).map(function (id) {
-	      var product = products[id];
-	      return React.createElement(Product, { key: id, product: product });
-	    });
+	  return Products;
+	})(React.Component);
 	
-	    return productViews;
-	  },
-	
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      { ref: "products", className: "products" },
-	      this.renderProducts()
-	    );
-	  }
-	});
+	;
 	
 	module.exports = Products;
 

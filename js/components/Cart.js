@@ -50,7 +50,7 @@ class CartItem extends React.Component{
   ClickRmBtn(id){
     removeCartItem(id);
   }
-  render: function() {
+  render() {
     let {item} = this.props;
     let {id,quantity} = this.props.item;
     let {price,imagePath,name} = products[id];

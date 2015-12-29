@@ -13,6 +13,11 @@ const LikeStore = require('../stores/LikeStore');
 const {getLikedItems, addLikedItem, removeLikedItem} = LikeStore;
 //add ConnectedStore
 const ConnectedStore = require('./ConnectedStore');
+//add MakeConnectedComponent
+// const MakeConnectedComponent = require('./MakeConnectedComponent');
+const MakeConnectedComponent = require('./MakeConnectedComponent');
+
+
 class Product extends React.Component{
   //用来添加Item到Cart当中
   clickAddBtn(id){
@@ -139,6 +144,7 @@ class ConnectedProducts extends React.Component{
 }
 
 //step 1
-module.exports = Products;
+// module.exports = Products;
 //step 2
-module.exports = ConnectedProducts;
+// module.exports = ConnectedProducts;
+module.exports = MakeConnectedComponent(MakeConnectedComponent(Products, CartStore, 'cartItems'), LikeStore, 'likedItems');

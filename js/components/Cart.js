@@ -13,13 +13,13 @@ const {getCartItems, getCartItem, removeCartItem} = CartStore;
 //add ConnectedStore to Cart View
 const ConnectedStore = require('./ConnectedStore');
 
-let Cart = React.createClass({
+class Cart extends React.Component{
   componentDidMount() {
     CartStore.addChangeListener(this.forceUpdate.bind(this));
 
     let {$content} = this.refs;
     Ps.initialize($content);
-  },
+  }
 
   renderCartItems() {
     let {cartItems} = this.props;
@@ -28,7 +28,7 @@ let Cart = React.createClass({
       let item = cartItems[key];
       return <CartItem key={key} item={item}/>
     });
-  },
+  }
 
   render() {
     return (
@@ -43,13 +43,13 @@ let Cart = React.createClass({
       </div>
     );
   }
-});
+};
 
-let CartItem = React.createClass({
+class CartItem extends React.Component{
   //删除掉购物车中的Item
   ClickRmBtn(id){
     removeCartItem(id);
-  },
+  }
   render: function() {
     let {item} = this.props;
     let {id,quantity} = this.props.item;
@@ -85,10 +85,10 @@ let CartItem = React.createClass({
       </div>
     );
   }
-});
+};
 
 //Step 2 Add ConnectedCart Class in Cart View
-let ConnectedCart = React.createClass({
+class ConnectedCart extends React.Component{
      render() {
          return (
              <ConnectedStore
@@ -100,6 +100,6 @@ let ConnectedCart = React.createClass({
          );
      }
      //props只传入了cartItems
- });
+ };
 
 module.exports = ConnectedCart;

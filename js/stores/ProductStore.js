@@ -1,7 +1,5 @@
 const LikeStore = require('./LikeStore');
-const {
-    likedItems
-} = LikeStore;
+const {likedItems} = LikeStore;
 const EventEmitter = require('events');
 
 let emitter = new EventEmitter();
@@ -79,16 +77,14 @@ let _products = {
 let _showOnlyLike = false;
 
 module.exports = {
-    products() {
-        return _products;
-    },
+    productsData() {
+            return _products;
+        },
 
         filteredProducts() {
             if (!_showOnlyLike) {
-                //如果没要求只显示喜欢的一类产品，则全部显示。
-                return this.products();
+                return this.productsData();
             } else {
-                //否则只显示喜欢的商品
                 let liked = likedItems();
                 let filteredItems = {};
                 for (let id in _products) {
@@ -101,15 +97,15 @@ module.exports = {
             }
         },
         toggleShowOnlyLike(flag) {
-            if (typeof flag === 'boolean') {
-                _showOnlyLike = flag;
-            } else {
-                _showOnlyLike = !_showOnlyLike;
-            }
+        if(typeof flag === 'boolean') {
+            _showOnlyLike = flag;
+        }else{
+            _showOnlyLike = !_showOnlyLike;
+        }
 
-            emitChange();
+        emitChange();
         },
-        isFiltered() {
+        isFiltered(){
             return _showOnlyLike;
         },
         addChangeListener(callback) {

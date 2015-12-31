@@ -20145,6 +20145,7 @@
 	var Checkout = __webpack_require__(/*! ./Checkout */ 161);
 	var Cart = __webpack_require__(/*! ./Cart */ 165);
 	var Products = __webpack_require__(/*! ./Products */ 189);
+	var FilterBtn = __webpack_require__(/*! ./FilterBtn */ 194);
 	
 	var App = React.createClass({
 	  displayName: "App",
@@ -20165,7 +20166,8 @@
 	        React.createElement(
 	          "div",
 	          { className: "site__left-sidebar" },
-	          React.createElement(SiteTitle, null)
+	          React.createElement(SiteTitle, null),
+	          React.createElement(FilterBtn, null)
 	        ),
 	        React.createElement(
 	          "div",
@@ -20254,8 +20256,7 @@
 	        "h2",
 	        null,
 	        "Buy Me Shoes"
-	      ),
-	      React.createElement("img", { className: "title__heart", src: "img/heart.svg" })
+	      )
 	    );
 	  }
 	});
@@ -22839,7 +22840,10 @@
 	var ConnectedStore = __webpack_require__(/*! ./ConnectedStore */ 188);
 	//add MakeConnectedComponent
 	// const MakeConnectedComponent = require('./MakeConnectedComponent');
-	var MakeConnectedComponent = __webpack_require__(/*! ./MakeConnectedComponent */ 191);
+	//add connect so that MakeConnectedComponent is useless
+	var connect = __webpack_require__(/*! ./connect */ 192);
+	//add ProductStore
+	var ProductStore = __webpack_require__(/*! ../stores/ProductStore */ 193);
 	
 	var Product = (function (_React$Component) {
 	  _inherits(Product, _React$Component);
@@ -22946,17 +22950,21 @@
 	  }
 	
 	  _createClass(Products, [{
-	    key: "componentDidMount",
-	    value: function componentDidMount() {
-	      CartStore.addChangeListener(this.forceUpdate.bind(this));
-	      LikeStore.addChangeListener(this.forceUpdate.bind(this));
-	    }
-	  }, {
 	    key: "renderProducts",
+	
+	    // componentDidMount(){
+	    //   CartStore.addChangeListener(this.forceUpdate.bind(this));
+	    //   LikeStore.addChangeListener(this.forceUpdate.bind(this));
+	    // }
 	    value: function renderProducts() {
-	      var likedItems = getLikedItems();
-	      var productViews = Object.keys(products).map(function (id) {
-	        var product = products[id];
+	      // let likedItems = getLikedItems();
+	      var _props = this.props;
+	      var cartItems = _props.cartItems;
+	      var likedItems = _props.likedItems;
+	      var filteredProducts = _props.filteredProducts;
+	
+	      var productViews = Object.keys(filteredProducts).map(function (id) {
+	        var product = filteredProducts[id];
 	        var liked = typeof likedItems[id] !== 'undefined';
 	        return React.createElement(Product, {
 	          key: id,
@@ -22998,6 +23006,8 @@
 	  // module.exports = Products;
 	  //step 2
 	  // module.exports = ConnectedProducts;
+	  // module.exports = MakeConnectedComponent(MakeConnectedComponent(Products, CartStore, 'cartItems'), LikeStore, 'likedItems');
+	  //add connect
 	
 	  _createClass(ConnectedProducts, [{
 	    key: "render",
@@ -23028,7 +23038,25 @@
 	  return ConnectedProducts;
 	})(React.Component);
 	
-	module.exports = MakeConnectedComponent(MakeConnectedComponent(Products, CartStore, 'cartItems'), LikeStore, 'likedItems');
+	var ConnectedProductsView = (function (_Products) {
+	  _inherits(ConnectedProductsView, _Products);
+	
+	  function ConnectedProductsView() {
+	    _classCallCheck(this, _ConnectedProductsView);
+	
+	    _get(Object.getPrototypeOf(_ConnectedProductsView.prototype), "constructor", this).apply(this, arguments);
+	  }
+	
+	  var _ConnectedProductsView = ConnectedProductsView;
+	  ConnectedProductsView = connect(ProductStore, 'filteredProducts')(ConnectedProductsView) || ConnectedProductsView;
+	  ConnectedProductsView = connect(LikeStore, "likedItems")(ConnectedProductsView) || ConnectedProductsView;
+	  ConnectedProductsView = connect(CartStore, "cartItems")(ConnectedProductsView) || ConnectedProductsView;
+	  return ConnectedProductsView;
+	})(Products);
+	
+	;
+	
+	module.exports = ConnectedProductsView;
 
 /***/ },
 /* 190 */
@@ -23140,6 +23168,227 @@
 	}
 	
 	module.exports = MakeConnectedComponent;
+
+/***/ },
+/* 192 */
+/*!**********************************!*\
+  !*** ./js/components/connect.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var MakeConnectedComponent = __webpack_require__(/*! ./MakeConnectedComponent */ 191);
+	
+	function connect(store) {
+		for (var _len = arguments.length, propNames = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+			propNames[_key - 1] = arguments[_key];
+		}
+	
+		return function (target) {
+			return MakeConnectedComponent.apply(undefined, [target, store].concat(propNames));
+		};
+	}
+	
+	module.exports = connect;
+
+/***/ },
+/* 193 */
+/*!***********************************!*\
+  !*** ./js/stores/ProductStore.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var LikeStore = __webpack_require__(/*! ./LikeStore */ 190);
+	var likedItems = LikeStore.likedItems;
+	
+	var EventEmitter = __webpack_require__(/*! events */ 164);
+	
+	var emitter = new EventEmitter();
+	
+	function emitChange() {
+	    emitter.emit('change');
+	}
+	
+	var _products = {
+	    "jameson-vulc": {
+	        id: "jameson-vulc",
+	        name: "Jameson Vulc",
+	        price: 64.99,
+	        imagePath: "img/shoes/jameson-vulc-brown-gum-orig.png",
+	        gender: "man"
+	    },
+	
+	    "marana-x-hook-ups": {
+	        id: "marana-x-hook-ups",
+	        name: "Marana X Hook-Up",
+	        price: 79.99,
+	        imagePath: "img/shoes/marana-x-hook-ups-black-orig.png",
+	        gender: "man"
+	    },
+	
+	    "jameson-e-lite": {
+	        id: "jameson-e-lite",
+	        name: "Jameson E-Lite",
+	        price: 69.99,
+	        imagePath: "img/shoes/jameson-e-lite-maroon-orig.png",
+	        gender: "man"
+	    },
+	
+	    "jameson-e-lite-julian-davidson-4": {
+	        id: "jameson-e-lite-julian-davidson-4",
+	        name: "Jameson E-Lite Julian Davidson",
+	        price: 74.99,
+	        imagePath: "img/shoes/jameson-e-lite-julian-davidson-4-black-gum-orig.png",
+	        gender: "man"
+	    },
+	
+	    "scout-womens-6": {
+	        id: "scout-womens-6",
+	        name: "Scout Women's",
+	        imagePath: "img/shoes/scout-womens-6-teal-orig.png",
+	        price: 59.99,
+	        gender: "woman"
+	    },
+	
+	    "scout-womens-coco-ho-5": {
+	        id: "scout-womens-coco-ho-5",
+	        name: "Scout Women's Coco Ho",
+	        imagePath: "img/shoes/scout-womens-coco-ho-5-olive-white-orig.png",
+	        price: 59.99,
+	        gender: "woman"
+	    },
+	
+	    "jameson-2-womens-8": {
+	        id: "jameson-2-womens-8",
+	        name: "Jameson 2 Women's",
+	        imagePath: "img/shoes/jameson-2-womens-8-black-white-gum-orig.png",
+	        price: 59.99,
+	        gender: "woman"
+	    },
+	
+	    "corby-womens-2": {
+	        id: "corby-womens-2",
+	        name: "Corby Women's",
+	        imagePath: "img/shoes/corby-womens-2-tan-white-orig.png",
+	        price: 44.99,
+	        gender: "woman"
+	    }
+	};
+	
+	var _showOnlyLike = false;
+	
+	module.exports = {
+	    productsData: function productsData() {
+	        return _products;
+	    },
+	
+	    filteredProducts: function filteredProducts() {
+	        if (!_showOnlyLike) {
+	            return this.productsData();
+	        } else {
+	            var liked = likedItems();
+	            var filteredItems = {};
+	            for (var id in _products) {
+	                var item = _products[id];
+	                if (id in liked) {
+	                    filteredItems[id] = item;
+	                }
+	            }
+	            return filteredItems;
+	        }
+	    },
+	    toggleShowOnlyLike: function toggleShowOnlyLike(flag) {
+	        if (typeof flag === 'boolean') {
+	            _showOnlyLike = flag;
+	        } else {
+	            _showOnlyLike = !_showOnlyLike;
+	        }
+	
+	        emitChange();
+	    },
+	    isFiltered: function isFiltered() {
+	        return _showOnlyLike;
+	    },
+	    addChangeListener: function addChangeListener(callback) {
+	        emitter.addListener("change", callback);
+	    },
+	
+	    removeChangeListener: function removeChangeListener(callback) {
+	        emitter.removeListener("change", callback);
+	    }
+	};
+
+/***/ },
+/* 194 */
+/*!************************************!*\
+  !*** ./js/components/FilterBtn.js ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var ProductStore = __webpack_require__(/*! ../stores/ProductStore */ 193);
+	var toggleShowOnlyLike = ProductStore.toggleShowOnlyLike;
+	
+	var connect = __webpack_require__(/*! ./connect */ 192);
+	
+	var FilterBtn = (function (_React$Component) {
+	    _inherits(FilterBtn, _React$Component);
+	
+	    function FilterBtn() {
+	        _classCallCheck(this, FilterBtn);
+	
+	        _get(Object.getPrototypeOf(FilterBtn.prototype), 'constructor', this).apply(this, arguments);
+	    }
+	
+	    _createClass(FilterBtn, [{
+	        key: 'handleFilterBtnClick',
+	        value: function handleFilterBtnClick() {
+	            toggleShowOnlyLike();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement('img', {
+	                src: this.props.isFiltered ? "img/heart-liked.svg" : "img/heart.svg",
+	                onClick: this.handleFilterBtnClick.bind(this),
+	                className: 'filter__heart'
+	            });
+	        }
+	    }]);
+	
+	    return FilterBtn;
+	})(React.Component);
+	
+	module.exports = FilterBtn;
+	
+	var ConnectedFilterBtn = (function (_FilterBtn) {
+	    _inherits(ConnectedFilterBtn, _FilterBtn);
+	
+	    function ConnectedFilterBtn() {
+	        _classCallCheck(this, _ConnectedFilterBtn);
+	
+	        _get(Object.getPrototypeOf(_ConnectedFilterBtn.prototype), 'constructor', this).apply(this, arguments);
+	    }
+	
+	    var _ConnectedFilterBtn = ConnectedFilterBtn;
+	    ConnectedFilterBtn = connect(ProductStore, 'isFiltered')(ConnectedFilterBtn) || ConnectedFilterBtn;
+	    return ConnectedFilterBtn;
+	})(FilterBtn);
+	
+	module.exports = ConnectedFilterBtn;
 
 /***/ }
 /******/ ]);

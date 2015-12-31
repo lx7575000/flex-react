@@ -4,6 +4,7 @@ const SiteTitle = require("./SiteTitle");
 const Checkout = require("./Checkout");
 const Cart = require("./Cart");
 const Products = require("./Products");
+const FilterBtn = require('./FilterBtn');
 
 let App = React.createClass({
   // The `render` method will generate the `buyshoes` site's virtual DOM.
@@ -18,6 +19,7 @@ let App = React.createClass({
         <div className="site__main">
           <div className="site__left-sidebar">
             <SiteTitle/>
+            <FilterBtn/>
           </div>
           <div className="site__content">
             <Products/>

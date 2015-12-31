@@ -4,13 +4,13 @@ const {toggleShowOnlyLike} = ProductStore;
 const connect = require('./connect');
 
 class FilterBtn extends React.Component{
-    handleFilterBtnClick() {
+    handleFilterBtnClick(){
         toggleShowOnlyLike();
     }
 
-    render() {
+    render(){     
         return (
-            <img 
+             <img 
                 src={this.props.isFiltered ? "img/heart-liked.svg" : "img/heart.svg"} 
                 onClick={this.handleFilterBtnClick.bind(this)}
                 className="filter__heart" 

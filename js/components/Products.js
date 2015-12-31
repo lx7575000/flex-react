@@ -15,7 +15,11 @@ const {getLikedItems, addLikedItem, removeLikedItem} = LikeStore;
 const ConnectedStore = require('./ConnectedStore');
 //add MakeConnectedComponent
 // const MakeConnectedComponent = require('./MakeConnectedComponent');
-const MakeConnectedComponent = require('./MakeConnectedComponent');
+//add connect so that MakeConnectedComponent is useless
+const connect = require('./connect');
+//add ProductStore 
+const ProductStore = require('../stores/ProductStore');
+
 
 
 class Product extends React.Component{
@@ -86,14 +90,15 @@ class Product extends React.Component{
 };
 
 class Products extends React.Component{
-  componentDidMount(){
-    CartStore.addChangeListener(this.forceUpdate.bind(this));
-    LikeStore.addChangeListener(this.forceUpdate.bind(this));
-  }
+  // componentDidMount(){
+  //   CartStore.addChangeListener(this.forceUpdate.bind(this));
+  //   LikeStore.addChangeListener(this.forceUpdate.bind(this));
+  // }
   renderProducts() {
-    let likedItems = getLikedItems();
-    let productViews = Object.keys(products).map(id => {
-      let product = products[id];
+    // let likedItems = getLikedItems();
+    let {cartItems, likedItems, filteredProducts} = this.props;
+    let productViews = Object.keys(filteredProducts).map(id => {
+      let product = filteredProducts[id];
       let liked = typeof likedItems[id] !== 'undefined';
       return (
         <Product 
@@ -147,4 +152,11 @@ class ConnectedProducts extends React.Component{
 // module.exports = Products;
 //step 2
 // module.exports = ConnectedProducts;
-module.exports = MakeConnectedComponent(MakeConnectedComponent(Products, CartStore, 'cartItems'), LikeStore, 'likedItems');
+// module.exports = MakeConnectedComponent(MakeConnectedComponent(Products, CartStore, 'cartItems'), LikeStore, 'likedItems');
+//add connect 
+@connect(CartStore,"cartItems")
+@connect(LikeStore,"likedItems")
+@connect(ProductStore, 'filteredProducts')
+class ConnectedProductsView extends Products {};
+
+module.exports = ConnectedProductsView;

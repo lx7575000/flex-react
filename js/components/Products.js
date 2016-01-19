@@ -97,6 +97,7 @@ class Products extends React.Component{
   renderProducts() {
     // let likedItems = getLikedItems();
     let {cartItems, likedItems, filteredProducts} = this.props;
+    //根据左边栏通过filterProducts
     let productViews = Object.keys(filteredProducts).map(id => {
       let product = filteredProducts[id];
       let liked = typeof likedItems[id] !== 'undefined';

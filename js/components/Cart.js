@@ -20,7 +20,9 @@ class Cart extends React.Component{
     let {$content} = this.refs;
     Ps.initialize($content);
   }
-
+   componentWillUnmount(){
+    CartStore.removeChangeListener(() => {console.log('unmount cart ..')});
+  }
   renderCartItems() {
     let {cartItems} = this.props;
     // let cartItems = getCartItems();

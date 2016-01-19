@@ -10,6 +10,9 @@ let Checkout = React.createClass({
   componentDidMount(){
     CartStore.addChangeListener(this.forceUpdate.bind(this));
   },
+  componentWillUnmount(){
+    CartStore.removeChangeListener(() => {console.log('unmount checkout ..')});
+  },
   render() {
     let subtotal = 0;
     let fixed_subtotal = 0;
@@ -27,17 +30,6 @@ let Checkout = React.createClass({
 
         <input type="text" className="checkout__coupon-input" placeholder="coupon code" />
 
-        {/*
-        <div className="checkout__line">
-          <div className="checkout__line__label">
-            Discount
-          </div>
-          <div className="checkout__line__amount">
-            -$90
-          </div>
-        </div>
-        */}
-
         <div className="checkout__line">
           <div className="checkout__line__label">
             Subtotal
@@ -50,7 +42,7 @@ let Checkout = React.createClass({
         <a className="checkout__button">
           <img className="checkout__button__icon" src="img/cart-icon.svg" />
           <div className="checkout__button__label">
-            Checkout
+            <button>Checkout</button>
           </div>
         </a>
       </div>

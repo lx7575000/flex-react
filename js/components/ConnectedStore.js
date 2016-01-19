@@ -5,7 +5,9 @@ class ConnectedStore extends React.Component {
 		const Store = this.props.store;
 		Store.addChangeListener(this.forceUpdate.bind(this));
 	}
-
+     componentWillUnmount(){
+    CartStore.removeChangeListener(() => {console.log('unmount  ..')});
+  }
   render() {
     // `children` 属性是一个函数。
     let contentRenderFunctions = this.props.children;

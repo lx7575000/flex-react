@@ -1,7 +1,13 @@
 Download the starter kit for the `buyshoes` project:
 
 ```
-git clone https://github.com/hayeah/sikeio-buyshoes-startkit.git buyshoes
+git clone git@github.com:lx7575000/flex-react.git
+```
+#提示：
+主要内容目前都在`flux-start`分支当中，`clone`后需要切换分支
+
+```
+git checkout flux-start
 ```
 
 After you've cloned the project, run `npm install` to download the project dependencies:

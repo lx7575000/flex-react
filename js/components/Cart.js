@@ -23,6 +23,33 @@ class Cart extends React.Component{
    componentWillUnmount(){
     CartStore.removeChangeListener(() => {console.log('unmount cart ..')});
   }
+   componentWillReceiveProps () {
+
+       console.log('Child componentWillReceiveProps');
+
+    }
+
+    shouldComponentUpdate (nextProps, nextState) {
+
+        console.log('Child shouldComponentUpdate');
+
+        return true;
+
+    }
+
+    componentWillUpdate() {
+
+        console.log('Child componentWillUpdate');
+
+    }
+
+    componentDidUpdate () {
+
+        console.log('Child componentDidUpdate');
+
+    }
+
+
   renderCartItems() {
     let {cartItems} = this.props;
     // let cartItems = getCartItems();
